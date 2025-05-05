@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "listTitle": "Agendamento online avançado",
+    "listLink": "services-details",
+    "listIcon": "fa-solid fa-angle-right"
+  },
+  {
+    "id": 2,
+    "listTitle": "Gestão de equipe simplificada",
+    "listLink": "services-details",
+    "listIcon": "fa-solid fa-angle-right"
+  },
+  {
+    "id": 3,
+    "listTitle": "Gestão de múltiplos usuários",
+    "listLink": "services-details",
+    "listIcon": "fa-solid fa-angle-right"
+  },
+  {
+    "id": 4,
+    "listTitle": "Editável e altamente personalizável",
+    "listLink": "services-details",
+    "listIcon": "fa-solid fa-angle-right"
+  },
+  {
+    "id": 5,
+    "listTitle": "Armazenamento de dados em nuvem ultrarrápido",
+    "listLink": "services-details",
+    "listIcon": "fa-solid fa-angle-right"
+  }
+]

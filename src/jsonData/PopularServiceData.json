@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "icon": "flaticon-layers",
+    "serviceName": "Interface Amigável",
+    "serviceLink": "services-details",
+    "serviceText": "Esses casos são perfeitamente simples e fáceis de distinguir. Em um momento livre, quando nosso poder."
+  },
+  {
+    "id": 2,
+    "icon": "flaticon-secure-1",
+    "serviceName": "Criptografia Forte",
+    "serviceLink": "services-details",
+    "serviceText": "Esses casos são perfeitamente simples e fáceis de distinguir. Em um momento livre, quando nosso poder."
+  }
+]

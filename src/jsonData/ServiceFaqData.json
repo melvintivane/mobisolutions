@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "dataParent": "faqAccordion",
+    "accordionId": "headingOne",
+    "collapsedClass": "",
+    "dataTarget": "#collapseOne",
+    "ariaExpanded": "true",
+    "ariaControls": "collapseOne",
+    "title": "Onde posso obter suporte para software?",
+    "text": "Nossa equipe está disponível para ajudá-lo com dúvidas técnicas, bugs ou integração de funcionalidades. Você pode entrar em contato pelo nosso formulário de suporte, e-mail ou chat direto no site.",
+    "collapseShow": "show"
+  },
+  {
+    "id": 2,
+    "dataParent": "faqAccordion",
+    "accordionId": "headingTwo",
+    "collapsedClass": "collapsed",
+    "dataTarget": "#collapseTwo",
+    "ariaExpanded": "false",
+    "ariaControls": "collapseTwo",
+    "title": "Quanto custa o desenvolvimento de software?",
+    "text": "O custo varia conforme a complexidade do projeto, funcionalidades desejadas e prazo. Oferecemos orçamentos personalizados após uma análise detalhada das suas necessidades.",
+    "collapseShow": ""
+  },
+  {
+    "id": 3,
+    "dataParent": "faqAccordion",
+    "accordionId": "headingThree",
+    "collapsedClass": "collapsed",
+    "dataTarget": "#collapseThree",
+    "ariaExpanded": "false",
+    "ariaControls": "collapseThree",
+    "title": "Que tipo de dados são necessários para desenvolver um software?",
+    "text": "Precisamos entender os fluxos de trabalho do seu negócio, dados que serão processados, usuários-alvo e funcionalidades desejadas. Essas informações nos ajudam a projetar uma solução personalizada e eficiente.",
+    "collapseShow": ""
+  }
+]

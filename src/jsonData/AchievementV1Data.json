@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "icon": "flaticon-startup-6",
+    "end": 120,
+    "info1": "Projetos de Software",
+    "info2": "entregues com sucesso"
+  },
+  {
+    "id": 2,
+    "icon": "flaticon-team",
+    "end": 15,
+    "info1": "Prêmios de Inovação",
+    "info2": "em tecnologia"
+  }
+]

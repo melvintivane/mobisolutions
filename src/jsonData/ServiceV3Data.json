@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "thumb": "banner-3.jpg",
+    "serviceIcon": "flaticon-planning",
+    "serviceTitle": "Planejamento de Software",
+    "serviceText": "Desenvolvemos soluções digitais alinhadas com as necessidades de negócios, focando na inovação e eficiência. Nossa abordagem transforma ideias em resultados tangíveis.",
+    "btnText": "Saiba Mais",
+    "btnLink": "services-details",
+    "btnIcon": "fa-solid fa-arrow-right"
+  },
+  {
+    "id": 2,
+    "thumb": "banner-3.jpg",
+    "serviceIcon": "flaticon-startup-6",
+    "serviceTitle": "Planeamento de Investimentos",
+    "serviceText": "Analisamos e planejamos investimentos em tecnologia, proporcionando um crescimento sustentável para empresas no cenário digital.",
+    "btnText": "Saiba Mais",
+    "btnLink": "services-details",
+    "btnIcon": "fa-solid fa-arrow-right"
+  },
+  {
+    "id": 3,
+    "thumb": "banner-3.jpg",
+    "serviceIcon": "flaticon-marketing-agent",
+    "serviceTitle": "Agência de Marketing Digital",
+    "serviceText": "Criamos estratégias de marketing digital que conectam marcas com seus públicos, potencializando a presença online e resultados de negócios.",
+    "btnText": "Saiba Mais",
+    "btnLink": "services-details",
+    "btnIcon": "fa-solid fa-arrow-right"
+  },
+  {
+    "id": 4,
+    "thumb": "banner-3.jpg",
+    "serviceIcon": "flaticon-secure-1",
+    "serviceTitle": "Segurança e Investimentos em TI",
+    "serviceText": "Oferecemos soluções de segurança para proteger seus investimentos digitais, garantindo a integridade e confiabilidade das suas plataformas.",
+    "btnText": "Saiba Mais",
+    "btnLink": "services-details",
+    "btnIcon": "fa-solid fa-arrow-right"
+  },
+  {
+    "id": 5,
+    "thumb": "banner-3.jpg",
+    "serviceIcon": "flaticon-data-analysis-1",
+    "serviceTitle": "Pesquisa de Mercado Digital",
+    "serviceText": "Realizamos pesquisas de mercado para identificar tendências e oportunidades, ajudando empresas a se posicionarem estrategicamente no mercado digital.",
+    "btnText": "Saiba Mais",
+    "btnLink": "services-details",
+    "btnIcon": "fa-solid fa-arrow-right"
+  },
+  {
+    "id": 6,
+    "thumb": "banner-3.jpg",
+    "serviceIcon": "flaticon-research-1",
+    "serviceTitle": "Análise de Relatórios Digitais",
+    "serviceText": "Oferecemos análise de dados e relatórios digitais para otimizar decisões estratégicas e melhorar a performance das suas operações online.",
+    "btnText": "Saiba Mais",
+    "btnLink": "services-details",
+    "btnIcon": "fa-solid fa-arrow-right"
+  }
+]

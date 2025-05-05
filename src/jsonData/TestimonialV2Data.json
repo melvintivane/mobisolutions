@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "text": "“A consultoria de desenvolvimento de software foi fundamental para nossa transformação digital. Trabalhamos de perto com a equipe para adaptar soluções inovadoras que atendem às necessidades do nosso negócio. A experiência foi incrível e os resultados falam por si mesmos.”",
+    "thumb": "9.jpg",
+    "name": "Matthew J. Wyman",
+    "designation": "Senior Consultant"
+  },
+  {
+    "id": 2,
+    "text": "“A equipe de desenvolvimento ofereceu soluções digitais personalizadas que ajudaram nossa empresa a alcançar novos patamares. A colaboração foi muito produtiva, e os resultados superaram nossas expectativas.”",
+    "thumb": "10.jpg",
+    "name": "Anthom Bu Spar",
+    "designation": "Marketing Manager"
+  },
+  {
+    "id": 3,
+    "text": "“Trabalhar com os desenvolvedores foi uma experiência enriquecedora. Eles trouxeram ideias criativas e eficientes para o nosso projeto, resultando em um software robusto e escalável. Recomendo totalmente a equipe.”",
+    "thumb": "11.jpg",
+    "name": "Istiak Ahmed",
+    "designation": "Senior Developer"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "text": "A consultoria oferecida foi essencial para entender as necessidades técnicas do nosso sistema. As soluções sugeridas impactaram positivamente a eficiência e escalabilidade da nossa aplicação, resolvendo questões críticas no processo de desenvolvimento.",
+    "name": "Matthew J. Wyman",
+    "designation": "Consultor Sênior"
+  },
+  {
+    "id": 2,
+    "text": "A equipe nos ajudou a transformar nossa estratégia de marketing digital, oferecendo insights valiosos para melhorar a performance dos nossos produtos no mercado. A expertise técnica foi fundamental para alcançar nossos objetivos.",
+    "name": "Anthom Bu Spar",
+    "designation": "Gerente de Marketing"
+  },
+  {
+    "id": 3,
+    "text": "A colaboração com a equipe de desenvolvimento foi excepcional. Juntos conseguimos implementar soluções inovadoras que aumentaram a performance do nosso software e resolveram desafios técnicos que antes eram complexos de abordar.",
+    "name": "Metho K. Partho",
+    "designation": "Desenvolvedor Sênior"
+  }
+]

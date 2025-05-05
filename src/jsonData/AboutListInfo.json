@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "Design de Software",
+    "icon": "fa-solid fa-angle-right"
+  },
+  {
+    "id": 2,
+    "title": "Soluções Digitais",
+    "icon": "fa-solid fa-angle-right"
+  },
+  {
+    "id": 3,
+    "title": "Desenvolvimento Web",
+    "icon": "fa-solid fa-angle-right"
+  },
+  {
+    "id": 4,
+    "title": "Branding Digital",
+    "icon": "fa-solid fa-angle-right"
+  }
+]

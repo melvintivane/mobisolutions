@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "icon1": "1.png",
+    "icon1Dark": "target.png",
+    "thumb": "1-full.jpg",
+    "icon2": "fas fa-long-arrow-right",
+    "text": "Planeamento estratégico de soluções digitais para alavancar resultados, com foco em usabilidade, escalabilidade e inovação.",
+    "title": "Arquitetura de Software",
+    "serviceLink": "services-details"
+  },
+  {
+    "id": 2,
+    "icon1": "2.png",
+    "icon1Dark": "envelope.png",
+    "thumb": "2-full.jpg",
+    "icon2": "fas fa-long-arrow-right",
+    "text": "Consultoria especializada para análise de requisitos, modernização de sistemas e adoção de boas práticas de engenharia de software.",
+    "title": "Consultoria em TI",
+    "serviceLink": "services-details"
+  },
+  {
+    "id": 3,
+    "icon1": "3.png",
+    "icon1Dark": "analytics.png",
+    "thumb": "3-full.jpg",
+    "icon2": "fas fa-long-arrow-right",
+    "text": "Implementação de métricas e ferramentas de monitoramento para acompanhar o desempenho de aplicações em tempo real.",
+    "title": "Monitoramento e Métricas",
+    "serviceLink": "services-details"
+  },
+  {
+    "id": 4,
+    "icon1": "4.png",
+    "icon1Dark": "4.png",
+    "thumb": "4-full.jpg",
+    "icon2": "fas fa-long-arrow-right",
+    "text": "Aprimoramento contínuo de código e desempenho em mecanismos de busca, com foco em performance e SEO técnico.",
+    "title": "Otimização de Sistemas",
+    "serviceLink": "services-details"
+  },
+  {
+    "id": 5,
+    "icon1": "5.png",
+    "icon1Dark": "5.png",
+    "thumb": "5-full.jpg",
+    "icon2": "fas fa-long-arrow-right",
+    "text": "Criação de campanhas de divulgação digital para lançamento de produtos e soluções baseadas em software.",
+    "title": "Lançamento de Produtos Digitais",
+    "serviceLink": "services-details"
+  },
+  {
+    "id": 6,
+    "icon1": "6.png",
+    "icon1Dark": "6.png",
+    "thumb": "6-full.jpg",
+    "icon2": "fas fa-long-arrow-right",
+    "text": "Desenvolvimento de sistemas sob medida, utilizando tecnologias modernas para web, mobile e cloud.",
+    "title": "Desenvolvimento Sob Medida",
+    "serviceLink": "services-details"
+  }
+]
