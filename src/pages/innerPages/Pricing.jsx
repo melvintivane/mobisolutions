@@ -1,5 +1,5 @@
 import React from "react";
-import HeaderV5 from "../../components/header/HeaderV5";
+import HeaderV1 from "../../components/header/HeaderV1";
 import BreadCrumb from "../../components/breadCrumb/BreadCrumb";
 import PriceV2 from "../../components/price/PriceV2";
 import ProjectDeal from "../project/ProjectDeal";
@@ -8,11 +8,11 @@ import FooterV1 from "../../components/footer/FooterV1";
 const Pricing = () => {
   return (
     <>
-      <HeaderV5 />
+      <HeaderV1 headerClass="dark" />
       <BreadCrumb
-        breadCrumb="pricing"
-        title1="Committed to"
-        title2="giving the best price"
+        breadCrumb="preços"
+        title1="Comprometidos em"
+        title2="oferecer o melhor preço"
         bottomSpace="pb-0"
       />
       <PriceV2 />

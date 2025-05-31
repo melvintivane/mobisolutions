@@ -16,18 +16,18 @@ const HeaderLogoV1 = ({ logoColor = false, openMenu }) => {
         </button>
         <Link className="navbar-brand" to="/#">
           {logoColor ? (
-            <h4 className="text-white fw-bold">MobiSolutions</h4>
+            <img src="/img/logo/logo-light.png" className="logo" alt="Logo" />
           ) : (
-            <h4 className="fw-bold">MobiSolutions</h4>
+            <img src="/img/logo/logo.png" className="logo" alt="Logo" />
           )}
         </Link>
         {/* <Link className="navbar-brand" to="/#">
-                    {logoColor ?
-                        <><img src="/img/logo/logo-light.png" className="logo" alt="Logo" /></>
-                        :
-                        <><img src="/img/logo/logo.png" className="logo" alt="Logo" /></>
-                    }
-                </Link> */}
+          {logoColor ?
+            <><img src="/img/logo/logo-light.png" className="logo" alt="Logo" /></>
+            :
+            <><img src="/img/logo/logo.png" className="logo" alt="Logo" /></>
+          }
+        </Link> */}
       </div>
     </>
   );

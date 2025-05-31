@@ -1,22 +1,22 @@
 [
     {
         "id": 1,
-        "infoName": "Clients:",
-        "infoValue": "validThemes"
+        "infoName": "Cliente:",
+        "infoValue": "EP Management & Consultancy"
     },
     {
         "id": 2,
         "infoName": "Project Type:",
-        "infoValue": "Website Growth"
+        "infoValue": "Plataforma de Recrutamento"
     },
     {
         "id": 3,
-        "infoName": "Date:",
-        "infoValue": "25 February, 2024"
+        "infoName": "Data:",
+        "infoValue": "25 Fevereiro de 2024"
     },
     {
         "id": 4,
-        "infoName": "Address:",
-        "infoValue": "New York United state"
+        "infoName": "Endereço:",
+        "infoValue": "Maputo, Alto Maé"
     }
 ]

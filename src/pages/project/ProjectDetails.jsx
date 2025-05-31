@@ -16,7 +16,7 @@ const ProjectDetails = () => {
     <>
       <HeaderV1 headerClass="dark" />
       <BreadCrumb
-        breadCrumb="project-details"
+        breadCrumb="Detalhes do Projecto"
         title1="Search engine optimization (SEO)"
         bottomSpace="pb-0"
       />

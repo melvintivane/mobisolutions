@@ -1,7 +1,7 @@
 /* ----------------------------------
 
-Template Name: Dilabs - Creative Digital Agency React Template
-Author: validTheme
+Template Name: MyMobiSolutions
+Author: melvintivane
 Version: 1.0
 
 Main Font    : Manrope
@@ -3874,7 +3874,7 @@ button i {
 }
 
 .banner-style-one h2 {
-	font-size: 120px;
+	font-size: 5rem;
 	font-weight: 900;
 	text-transform: capitalize;
 	line-height: 1;
@@ -9387,7 +9387,10 @@ footer .footer-bottom p {
 
 	.banner-style-three .information {
 		padding-top: 50px;
+		font-size: 0px;
 	}
+
+	
 
 	/* About */
 	.about-style-one.bg-dark {

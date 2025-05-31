@@ -17,13 +17,13 @@ const HeaderSidebarMenu = ({ isSidebarOpen, removeClasses, addClasses }) => {
       <div className="attr-right">
         <div className="attr-nav flex">
           <ul>
-            <li className="search">
+            {/* <li className="search">
               <button onClick={() => setDarkMode(!darkMode)}>
                 <i
                   className={`fa-solid ${darkMode ? "fa-sun" : "fa-moon"}`}
                 ></i>
               </button>
-            </li>
+            </li> */}
             <li className="side-menu">
               <Link to={void 0} onClick={addClasses}>
                 <span className="bar-1"></span>
@@ -40,8 +40,7 @@ const HeaderSidebarMenu = ({ isSidebarOpen, removeClasses, addClasses }) => {
           </Link>
           <div className="widget">
             <div className="logo">
-              {/* <img src="/img/logo/logo-light.png" alt="Logo" /> */}
-              <h3 className="text-white fw-bold m-3">MobiSolutions</h3>
+              <img src="/img/logo/logo-light.png" alt="Logo" />
             </div>
           </div>
           <div className="widget">
@@ -82,8 +81,8 @@ const HeaderSidebarMenu = ({ isSidebarOpen, removeClasses, addClasses }) => {
                   <div className="content">
                     <p>Contacto</p>
                     <strong>
-                      <a href="tel:+4258842074393" className="color-para">
-                        +4258842074393
+                      <a href="tel:+2588842074393" className="color-para">
+                        +2588842074393
                       </a>
                     </strong>
                   </div>

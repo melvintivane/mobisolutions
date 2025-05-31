@@ -24,12 +24,11 @@ const FooterV1 = () => {
                   <img src="/img/shape/6.png" alt="Image Not Found" />
                 </div>
                 <div className="f-item about pr-50 pr-xs-0 pr-md-0">
-                  {/* <img
+                  <img
                     className="logo"
                     src="/img/logo/logo-light.png"
-                    alt="Logo"
-                  /> */}
-                  <h3 className="fw-bold mb-50">MobiSolutions</h3>
+                    alt="MyMobiSolutions"
+                  />
                   <p>
                     Estamos prontos para enfrentar os desafios tecnológicos e
                     transformar ideias em soluções eficazes. Nosso compromisso é
@@ -126,7 +125,7 @@ const FooterV1 = () => {
             <div className="row">
               <div className="col-lg-12">
                 <p>
-                  Copyright &copy; {new Date().getFullYear()} MobiSolutions. Todos
+                  Copyright &copy; {new Date().getFullYear()} MyMobiSolutions. Todos
                   os Direitos Reservados.
                 </p>
               </div>

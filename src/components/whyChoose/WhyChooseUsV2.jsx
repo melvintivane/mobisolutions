@@ -22,7 +22,7 @@ const WhyChooseUsV2 = () => {
             </div>
             <div className="col-xl-7 offset-xl-1 text-end">
               <div className="choose-us-style-two-thumb">
-                <div className="curve-text">
+                {/* <div className="curve-text">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 150 150"
@@ -36,7 +36,7 @@ const WhyChooseUsV2 = () => {
                       </textPath>
                     </text>
                   </svg>
-                </div>
+                </div> */}
                 <h4>Temos experiência em soluções digitais para você</h4>
                 <h2 className="text-path">desde 2013</h2>
                 <img

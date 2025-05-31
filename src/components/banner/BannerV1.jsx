@@ -15,7 +15,7 @@ const BannerV1 = () => {
           <div className="container">
             <div className="content">
               <div className="row align-center">
-                <div className="col-xl-6 col-lg-6">
+                <div className="col-xl-4 col-lg-6">
                   <div className="information">
                     <Animate
                       className="animate__animated animate__fadeInUp"
@@ -54,7 +54,7 @@ const BannerV1 = () => {
                     </Animate>
                   </div>
                 </div>
-                <div className="col-xl-6 col-lg-6 pl-50 pl-md-15 pl-xs-15">
+                {/* <div className="col-xl-6 col-lg-6 pl-50 pl-md-15 pl-xs-15">
                   <div className="thumb">
                     <Animate className="animate__animated animate__fadeInUp">
                       <img
@@ -74,6 +74,13 @@ const BannerV1 = () => {
                       />
                     </Animate>
                   </div>
+                </div> */}
+                <div className="col-xl-8 col-lg-6 pl-50 pl-md-15 pl-xs-15">
+                  <img
+                    src="/img/thumb/tech-bg.png"
+                    alt="Banner Image"
+                    className="w-full h-auto"
+                  />
                 </div>
               </div>
             </div>
