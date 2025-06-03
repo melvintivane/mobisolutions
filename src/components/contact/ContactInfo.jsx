@@ -6,7 +6,7 @@ const ContactInfo = () => {
     <>
       <div className="contact-style-one-info">
         <div className="mb-40">
-          <h2>Informações de Contato</h2>
+          <h2>Informações de Contacto</h2>
           <p>
             Planeie uma forma de obter um local frio esta semana. <br /> Quase
             não há limites para os corações. Resolva as partes.
@@ -17,7 +17,7 @@ const ContactInfo = () => {
             <li>
               <div className="content">
                 <h4 className="title">Telefone</h4>
-                <a href="tel:+258842074393">+258842074393</a>
+                <a href="tel:+258 84 039 6163">+258 84 039 6163</a>
               </div>
             </li>
           </Animate>
@@ -29,7 +29,7 @@ const ContactInfo = () => {
             <li>
               <div className="info">
               <h4 className="title">Localização</h4>
-                <p>Cidade de Maputo, Maputo</p>
+                <p>Av. Industrias, n° 3787, Liberdade</p>
               </div>
             </li>
           </Animate>
@@ -41,7 +41,7 @@ const ContactInfo = () => {
             <li>
               <div className="info">
                 <h4 className="title">Email Oficial</h4>
-                <a href="mailto:melvintivane@gmail.com">melvintivane@gmail.com</a>
+                <a href="mailto:contact@mymobisolutions.com">contact@mymobisolutions.com</a>
               </div>
             </li>
           </Animate>

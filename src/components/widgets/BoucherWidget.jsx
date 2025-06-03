@@ -1,5 +1,6 @@
 import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
+import Brochura from "../../assets/docs/brochura-mymobisolutions.pdf";
 
 const BoucherWidget = () => {
   return (
@@ -8,14 +9,14 @@ const BoucherWidget = () => {
         <h4 className="widget-title">Brochura</h4>
         <ul>
           <li>
-            <Link to="#">
+            <a href={Brochura} target="_blank" rel="noopener noreferrer">
               <i className="fa-solid fa-file-pdf"></i> Baixar Brochura
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="#">
+            <a href={Brochura} target="_blank" rel="noopener noreferrer">
               <i className="fa-solid fa-file-pdf"></i> Detalhes da Empresa
-            </Link>
+            </a>
           </li>
         </ul>
       </div>

@@ -21,7 +21,7 @@ const Routers = () => {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home1 />}></Route>
-        <Route path="/home-dark" element={<Home1Dark />}></Route>
+        {/* <Route path="/home-dark" element={<Home1Dark />}></Route> */}
         <Route path="/services" element={<Services3 />}></Route>
         <Route
           path="/services-details/:id"

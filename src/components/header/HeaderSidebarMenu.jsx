@@ -61,7 +61,7 @@ const HeaderSidebarMenu = ({ isSidebarOpen, removeClasses, addClasses }) => {
                 <li>
                   <div className="content">
                     <p>Endereço</p>
-                    <strong>Maputo, Alto maé</strong>
+                    <strong>Av. Industrias, n° 3787, Liberdade</strong>
                   </div>
                 </li>
                 <li>
@@ -69,10 +69,10 @@ const HeaderSidebarMenu = ({ isSidebarOpen, removeClasses, addClasses }) => {
                     <p>Email</p>
                     <strong>
                       <a
-                        href="mailto:melvintivane@gmail.com"
+                        href="mailto:contact@mymobisolutions.com"
                         className="color-para"
                       >
-                        melvintivane@gmail.com
+                        contact@mymobisolutions.com
                       </a>
                     </strong>
                   </div>
@@ -81,8 +81,8 @@ const HeaderSidebarMenu = ({ isSidebarOpen, removeClasses, addClasses }) => {
                   <div className="content">
                     <p>Contacto</p>
                     <strong>
-                      <a href="tel:+2588842074393" className="color-para">
-                        +2588842074393
+                      <a href="tel:+258 84 039 6163" className="color-para">
+                        +258 84 039 6163
                       </a>
                     </strong>
                   </div>

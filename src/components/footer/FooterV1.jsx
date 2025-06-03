@@ -60,7 +60,7 @@ const FooterV1 = () => {
                       <Link to="/contact-us#">Carreiras</Link>
                     </li>
                     <li>
-                      <Link to="/contact-us#">Contato</Link>
+                      <Link to="/contact-us#">Contacto</Link>
                     </li>
                   </ul>
                 </div>
@@ -68,26 +68,26 @@ const FooterV1 = () => {
 
               <div className="col-lg-3 col-md-6 footer-item mt-50">
                 <div className="f-item contact">
-                  <h4 className="widget-title">Informações de Contato</h4>
+                  <h4 className="widget-title">Informações de Contacto</h4>
                   <ul>
                     <li>
                       <div className="content">
                         <strong>Endereço:</strong>
-                        Cidade de Maputo, Maputo
+                        Av. Industrias, n° 3787, Liberdade
                       </div>
                     </li>
                     <li>
                       <div className="content">
                         <strong>Email:</strong>
-                        <a href="mailto:melvintivane@gmail.com">
-                          melvintivane@gmail.com
+                        <a href="mailto:contact@mymobisolutions.com">
+                          contact@mymobisolutions.com
                         </a>
                       </div>
                     </li>
                     <li>
                       <div className="content">
                         <strong>Telefone:</strong>
-                        <a href="tel:2151234567">+258 84 207 4393</a>
+                        <a href="tel:2151234567">+258 84 039 6163</a>
                       </div>
                     </li>
                   </ul>

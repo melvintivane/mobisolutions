@@ -42,7 +42,7 @@ const TeamDetailsContent = ({ teamInfo }) => {
                         </div>
                         <div className="operator">+</div>
                       </div>
-                      <span className="medium">Projetos realizado ao longo de 13 anos</span>
+                      <span className="medium">Projectos realizado ao longo de 13 anos</span>
                     </div>
                   </div>
                   <ul>

@@ -14,9 +14,9 @@ const SupportWidget = () => {
             Fale com um atendente para preencher um formulário? Ligue para o
             escritório corporativo e nós conectaremos você.
           </p>
-          <h2>+(258) 842074393</h2>
+          <h2>+258 84 039 6163</h2>
           <h4>
-            <a href="mailto:melvintivane@gmail.com">melvintivane@gmail.com</a>
+            <a href="mailto:contact@mymobisolutions.com">contact@mymobisolutions.com</a>
           </h4>
           <Link
             className="btn mt-30 circle btn-sm btn-gradient"
