@@ -1,9 +1,8 @@
-import React from "react";
-import HeaderV1 from "../../components/header/HeaderV1";
-import BreadCrumb from "../../components/breadCrumb/BreadCrumb";
-import ProjectDetailsContent from "../../components/project/ProjectDetailsContent";
-import FooterV1 from "../../components/footer/FooterV1";
 import { useParams } from "react-router-dom";
+import BreadCrumb from "../../components/breadCrumb/BreadCrumb";
+import FooterV1 from "../../components/footer/FooterV1";
+import HeaderV1 from "../../components/header/HeaderV1";
+import ProjectDetailsContent from "../../components/project/ProjectDetailsContent";
 import ProjectV1Data from "../../jsonData/ProjectV1Data.json";
 
 const ProjectDetails = () => {
@@ -17,7 +16,7 @@ const ProjectDetails = () => {
       <HeaderV1 headerClass="dark" />
       <BreadCrumb
         breadCrumb="Detalhes do Projecto"
-        title1="Search engine optimization (SEO)"
+        title1={data.title}
         bottomSpace="pb-0"
       />
       <ProjectDetailsContent projectInfo={data} />
