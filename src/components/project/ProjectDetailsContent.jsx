@@ -1,8 +1,10 @@
-import React from 'react';
+import projectWidgetData from '../../jsonData/ProjectWidgetData.json';
 import ProjectInfoWidget from '../widgets/ProjectInfoWidget';
 
 const ProjectDetailsContent = ({ projectInfo }) => {
-    const { thumbFull, title } = projectInfo
+    const { thumbFull,title2,title3, description,description2,lastParagraph,description3,boxImg1,boxImg2,id } = projectInfo
+
+    const projectData = projectWidgetData.filter(info=>info.id === id);
 
     return (
         <>
@@ -18,7 +20,7 @@ const ProjectDetailsContent = ({ projectInfo }) => {
                                         </div>
                                     </div>
                                     <div className="col-xl-4">
-                                        <ProjectInfoWidget />
+                                        <ProjectInfoWidget projectData={projectData} />
                                     </div>
                                 </div>
                             </div>
@@ -30,33 +32,33 @@ const ProjectDetailsContent = ({ projectInfo }) => {
                         <div className="row">
                             <div className="col-xl-10 offset-xl-1">
                                 <div className="project-details mt-40">
-                                    <h2>{title}</h2>
+                                    <h2>Descrição do Projeto</h2>
                                     <p>
-                                        Netus lorem rutrum arcu dignissim at sit morbi phasellus nascetur eget urna potenti cum vestibulum cras. Tempor nonummy metus lobortis. Sociis velit etiam, dapibus. Lectus vehicula pellentesque cras posuere tempor facilisi habitant lectus rutrum pede quisque hendrerit parturient posuere mauris ad elementum fringilla facilisi volutpat fusce pharetra felis sapien varius quisque class convallis praesent est sollicitudin donec nulla venenatis, cursus fermentum netus posuere sociis porta risus habitant malesuada nulla habitasse hymenaeos. Viverra curabitur nisi vel sollicitudin dictum natoque ante aenean elementum curae malesuada ullamcorper. vivamus nonummy nisl posuere rutrum
+                                        {description}
                                     </p>
                                     <ul className="check-list mb-30">
                                         <li>
-                                            <h3>Mobile Optimization</h3>
+                                            <h3>{title2}</h3>
                                             <p>
-                                                Tempor nonummy metus lobortis. Sociis velit etiam, Configurations dapibus. Lectus vehicula pellentesque cras posuere tempor facilisi habitant lectus rutrum pede quisque hendrerit parturient posuere mauris ad elementum potenti nostra aenean lacinia varius.
+                                                {description2}
                                             </p>
                                         </li>
                                         <li>
-                                            <h3>Marketing Automation</h3>
+                                            <h3>{title3}</h3>
                                             <p>
-                                                Jonery nonummy metus lobortis. Sociis velit etiam, Configurations dapibus. Lectus vehicula pellentesque cras posuere tempor facilisi habitant lectus rutrum pede quisque hendrerit parturient posuere mauris ad elementum .
+                                                {description3}
                                             </p>
                                         </li>
                                     </ul>
                                     <p>
-                                        Give lady of they such they sure it. Me contained explained my education. Vulgar as hearts by garret. Perceived determine departure explained no forfeited he something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff. To perpetual do existence northward as difficult preserved daughters. Continued at up to zealously necessary breakfast. Surrounded sir motionless she end literature. Gay direction neglected but supported yet her.  Facilisis inceptos nec, potenti nostra aenean lacinia varius semper ant nullam nulla primis placerat facilisis. Netus lorem rutrum arcu dignissim at sit morbi phasellus nascetur eget urna potenti cum vestibulum cras. Tempor nonummy metus lobortis. Sociis velit etiam, dapibus. Lectus vehicula pellentesque cras posuere tempor facilisi habitant lectus rutrum pede quisque hendrerit parturient posuere mauris ad elementum fringilla facilisi volutpat fusce pharetra felis sapien varius quisque class convallis praesent est sollicitudin donec nulla venenatis, cursus fermentum netus posuere sociis porta risus habitant malesuada nulla habitasse hymenaeos. Viverra curabitur nisi vel sollicitudin dictum natoque ante aenean elementum curae malesuada ullamcorper.
+                                        {lastParagraph}
                                     </p>
                                     <div className="row mt-50 mt-xs-30">
                                         <div className="col-lg-6 col-md-6">
-                                            <img src="/img/portfolio/11.jpg" alt="Thumb" />
+                                            <img src={`/img/portfolio/${boxImg1}`} alt="Thumb" />
                                         </div>
                                         <div className="col-lg-6 col-md-6 mt-xs-30">
-                                            <img src="/img/portfolio/10.jpg" alt="Thumb" />
+                                            <img src={`/img/portfolio/${boxImg2}`} alt="Thumb" />
                                         </div>
                                     </div>
                                 </div>

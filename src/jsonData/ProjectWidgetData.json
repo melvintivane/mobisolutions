@@ -1,6 +1,6 @@
 [
     {
-        "id": 1,
+        "id": 2,
         "infoName": "Cliente:",
         "infoValue": "EP Management & Consultancy"
     },
@@ -10,13 +10,73 @@
         "infoValue": "Plataforma de Recrutamento"
     },
     {
-        "id": 3,
+        "id": 2,
         "infoName": "Data:",
         "infoValue": "25 Fevereiro de 2024"
     },
     {
+        "id": 2,
+        "infoName": "Endereço:",
+        "infoValue": "Maputo, Moçambique"
+    },
+    {
+        "id": 3,
+        "infoName": "Cliente:",
+        "infoValue": "Fundação Samora Machel"
+    },
+    {
+        "id": 3,
+        "infoName": "Project Type:",
+        "infoValue": "Website Institucional"
+    },
+    {
+        "id": 3,
+        "infoName": "Data:",
+        "infoValue": "15 Março de 2024"
+    },
+    {
+        "id": 3,
+        "infoName": "Endereço:",
+        "infoValue": "Maputo, Moçambique"
+    },
+    {
+        "id": 4,
+        "infoName": "Cliente:",
+        "infoValue": "Click Tech Moz"
+    },
+    {
+        "id": 4,
+        "infoName": "Project Type:",
+        "infoValue": "Loja Virtual"
+    },
+    {
+        "id": 4,
+        "infoName": "Data:",
+        "infoValue": "10 Abril de 2024"
+    },
+    {
         "id": 4,
         "infoName": "Endereço:",
-        "infoValue": "Maputo, Alto Maé"
+        "infoValue": "Maputo, Moçambique"
+    },
+    {
+        "id": 5,
+        "infoName": "Cliente:",
+        "infoValue": "Correio 24"
+    },
+    {
+        "id": 5,
+        "infoName": "Project Type:",
+        "infoValue": "Sistema de Correio"
+    },
+    {
+        "id": 5,
+        "infoName": "Data:",
+        "infoValue": "20 Maio de 2024"
+    },
+    {
+        "id": 5,
+        "infoName": "Endereço:",
+        "infoValue": "Maputo, Moçambique"
     }
 ]
