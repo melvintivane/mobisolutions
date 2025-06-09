@@ -1,15 +1,14 @@
-import BlogForm from "./BlogForm";
-import Animate from "../animation/Animate";
 import { Link } from "react-router-dom";
-import handleSmoothScroll from "../utilities/handleSmoothScroll";
-import SingleBlogComment from "./SingleBlogComment";
 import BlogCommentData from "../../jsonData/BlogCommentData.json";
 import BlogV1Data from "../../jsonData/BlogV1Data.json";
-import team9 from "/img/team/9.jpg";
+import Animate from "../animation/Animate";
 import SocialShare2 from "../others/SocialShare2";
+import handleSmoothScroll from "../utilities/handleSmoothScroll";
+import BlogForm from "./BlogForm";
+import SingleBlogComment from "./SingleBlogComment";
 
 const BlogSingleContent = ({ blogInfo, totalBlogs }) => {
-  const { id, thumbFull, midTitle, title } = blogInfo || {};
+  const { id, thumb,authorProfileImg, authorName, date, title, mainText,quoteText, authorResume } = blogInfo || {};
 
   // Blogs Navigation
   const currentId = id ? parseInt(id.toString(), 10) : 1;
@@ -38,53 +37,28 @@ const BlogSingleContent = ({ blogInfo, totalBlogs }) => {
                   <div className="blog-style-one item">
                     <div className="blog-item-box">
                       <div className="thumb">
-                        <img src={`/img/blog/${thumbFull}`} alt="Thumb" />
+                        <img src={thumb} alt="Thumb" />
                       </div>
                       <div className="info">
                         <div className="meta">
                           <ul>
                             <li>
                               <i className="fa-solid fa-user"></i>{" "}
-                              <Link to="#">Md Sohag</Link>
+                              <Link to="#">{authorName}</Link>
                             </li>
                             <li>
-                              <i className="fa-solid fa-calendar-alt"></i> 25 de
-                              Abril, 2024
+                              <i className="fa-solid fa-calendar-alt"></i> {date}
                             </li>
                           </ul>
                         </div>
                         <p>
-                          Dê à dama o que eles acham que ela merece. Expus
-                          claramente minha formação. Vulgar como corações no
-                          sótão. Percebeu a partida explicada sem que ele
-                          perdesse algo. Contrastando diferenças, você encontra
-                          alegria razoavelmente. Novamente permanece sem
-                          sentido. Para continuar existindo ao norte, como
-                          filhas protegidas com dificuldade. Continuou com
-                          entusiasmo necessário até o café da manhã. Cercada,
-                          senhorita imóvel, ela finalizou a leitura. Direção
-                          alegre negligenciada, mas ainda assim apoiada por ela.
+                          {mainText}
                         </p>
-                        <p>
-                          Novidades aconteceram deixando todos desconfortáveis.
-                          Desenhos podem ser seguidos, melhorados, mas não
-                          sociáveis. Fingiu de imediato com seriedade. Veja
-                          alguns relatos agradáveis de forma cortês. Excelência
-                          projetada é enviada de Devonshire, notavelmente ao
-                          estimar. O lado da vida no passado. Continuar se
-                          expressando era horrível para o ambiente doméstico.
-                          Ver ela o fez não valorizar os homens, desculpando-se
-                          com sua genialidade. Negociações sobre sua idade.
-                          Comparações com o novo filho melancólico de Hampshire.
-                        </p>
+                        
                         <blockquote>
-                          Celebrou-se a partilha do início para o pior.
-                          Casamentos e quaisquer opiniões apropriadas, mesmo que
-                          pequenas. Casas ou meses resolveram afastar as
-                          senhoras. Envolvido em sofrimento, supunha-se que ele
-                          recomendava com entusiasmo.
+                          {quoteText}
                         </blockquote>
-                        <p>
+                        {/*<p>
                           Desenhos podem ser seguidos, melhorados, mas não
                           sociáveis. Fingiu de imediato com seriedade. Veja
                           alguns relatos agradáveis de forma cortês. Excelência
@@ -120,7 +94,7 @@ const BlogSingleContent = ({ blogInfo, totalBlogs }) => {
                           dolore repellat, omnis quam? Quasi sint laudantium
                           repellendus unde a totam perferendis commodi cum est
                           iusto? Minima, laborum.
-                        </p>
+                        </p>*/}
                       </div>
                     </div>
                   </div>
@@ -128,20 +102,16 @@ const BlogSingleContent = ({ blogInfo, totalBlogs }) => {
                   {/* <BlogPostAuthor /> */}
                   <div className="post-author">
                     <div className="thumb">
-                      <img src={team9} alt="Thumb" />
+                      <img src={authorProfileImg} alt="Thumb" />
                     </div>
                     <div className="info">
                       <h4>
                         <Link to="#" onClick={handleSmoothScroll}>
-                          Md Sohag
+                          {authorName}
                         </Link>
                       </h4>
                       <p>
-                        Grursus mal suada faci lisis Lorem ipsum dolarorit more
-                        ametion consectetur elit. Vesti at bulum nec at odio aea
-                        the dumm ipsumm ipsum that dolocons rsus mal suada and
-                        fadolorit to the consectetur elit. Todos os geradores de
-                        Lorem Ipsum na Internet tendem a repetir.
+                        {authorResume}
                       </p>
                     </div>
                   </div>

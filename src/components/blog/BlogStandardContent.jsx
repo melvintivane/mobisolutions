@@ -1,10 +1,13 @@
-import React, { useEffect, useState } from "react";
-import BlogPostData from "../../jsonData/BlogPostData.json";
-import SingleBlogContentV1 from "./SingleBlogContentV1";
+import { useEffect, useState } from "react";
 import Pagination from "react-paginate";
 import { useNavigate, useParams } from "react-router-dom";
+import SingleBlogContentV1 from "./SingleBlogContentV1";
 
 const BlogStandardContent = () => {
+  const [blogPosts, setBlogPosts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
   // Pagination
   const navigate = useNavigate();
   const { page } = useParams();
@@ -18,9 +21,28 @@ const BlogStandardContent = () => {
     setCurrentPage(currentPageNumber);
   }, [currentPageNumber]);
 
+  useEffect(() => {
+    const fetchBlogPosts = async () => {
+      try {
+        const response = await fetch("http://localhost:5000/api/posts");
+        if (!response.ok) {
+          throw new Error("Failed to fetch blog posts");
+        }
+        const data = await response.json();
+        setBlogPosts(data);
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchBlogPosts();
+  }, []);
+
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
-  const currentBlogData = BlogPostData.slice(startIndex, endIndex);
+  const currentBlogData = blogPosts.slice(startIndex, endIndex);
 
   const handlePageClick = (data) => {
     const selectedPage = data.selected + 1;
@@ -34,7 +56,30 @@ const BlogStandardContent = () => {
     }, 200);
   };
 
-  const totalPages = Math.ceil(BlogPostData.length / itemsPerPage);
+  const totalPages = Math.ceil(blogPosts.length / itemsPerPage);
+
+  if (loading) {
+    return <div className="text-center py-5">Loading...</div>;
+  }
+
+  if (error) {
+    return <div className="text-center py-5">Error: {error}</div>;
+  }
+
+  if (blogPosts.length === 0) {
+    return (
+      <div className="blog-area full-blog blog-standard default-padding">
+        <div className="container">
+          <div className="row">
+            <div className="blog-content col-xl-10 offset-xl-1 col-md-12 text-center py-5">
+              <h3>Brevemente</h3>
+              <p>Novos conteúdos estarão disponíveis em breve.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <>
@@ -63,7 +108,7 @@ const BlogStandardContent = () => {
                   )
                 }
                 breakLabel={"..."}
-                pageCount={Math.ceil(BlogPostData.length / itemsPerPage)}
+                pageCount={totalPages}
                 marginPagesDisplayed={2}
                 pageRangeDisplayed={5}
                 onPageChange={handlePageClick}
