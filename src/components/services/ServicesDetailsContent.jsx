@@ -1,15 +1,22 @@
-import React from "react";
+import ServiceFaqV1 from "../faq/ServiceFaqV1";
+import BoucherWidget from "../widgets/BoucherWidget";
 import ServiceListWidget from "../widgets/ServiceListWidget";
 import SupportWidget from "../widgets/SupportWidget";
-import BoucherWidget from "../widgets/BoucherWidget";
-import FeatureListData from "../../jsonData/FeatureListData.json";
-import PopularServiceData from "../../jsonData/PopularServiceData.json";
-import SinglePopularService from "./SinglePopularService";
-import ServiceFaqV1 from "../faq/ServiceFaqV1";
 
 const ServicesDetailsContent = ({ serviceInfo }) => {
-  const { thumb, text, title } = serviceInfo;
+  const { thumb, text, title,incluededServices, challenge,whatWeDo } = serviceInfo;
+  const createSlug = (title) => {
+    return title
+      .toLowerCase()
+      .normalize("NFD") // Normaliza caracteres acentuados
+      .replace(/[\u0300-\u036f]/g, "") // Remove acentos
+      .replace(/[^\w\s-]/g, '') // Remove caracteres especiais
+      .replace(/\s+/g, '-') // Substitui espaços por hífens
+      .replace(/-+/g, '-') // Remove hífens duplicados
+      .trim();
+  };
 
+  const slug = createSlug(serviceInfo.title);
   return (
     <>
       <div className="services-details-area default-padding">
@@ -28,8 +35,8 @@ const ServicesDetailsContent = ({ serviceInfo }) => {
                       <div className="content">
                         <h3>Serviços Incluídos</h3>
                         <ul className="feature-list-item">
-                          {FeatureListData.map((list) => (
-                            <li key={list.id}>{list.featureList}</li>
+                          {incluededServices.map((item, index) => (
+                            <li key={index}>{item}</li>
                           ))}
                         </ul>
                       </div>
@@ -38,12 +45,7 @@ const ServicesDetailsContent = ({ serviceInfo }) => {
                       <div className="content">
                         <h3>O Desafio</h3>
                         <p>
-                          Temporibus autem quibusdam et aut officiis debitis aut
-                          rerum necessitatibus saepe eveniet ut et voluptates
-                          repudiandae sint et molestiae non recusandae. Itaque
-                          earum rerum hic tenetur a sapiente delectus, ut aut
-                          reiciendis voluptatibus maiores alias. consequatur aut
-                          perferendis doloribus.
+                          {challenge}
                         </p>
                       </div>
                     </div>
@@ -51,26 +53,14 @@ const ServicesDetailsContent = ({ serviceInfo }) => {
                 </div>
                 <h3>O que fazemos?</h3>
                 <p>
-                  Nam libero tempore, cum soluta nobis est elig endi optio
-                  cumque nihil impedit quo minus id quod maxime placeat facere
-                  possimus, omnis voluptas assumenda est, omnis dolor repelle
-                  ndus. Temporibus autem quibusdam et aut officiis debitis aut
-                  rerum necessitatibus saepe eveniet ut et voluptates
-                  repudiandae sint et molestiae non recusandae. Itaque earum
-                  rerum hic tenetur a sapiente delectus, ut aut reiciendis
-                  voluptatibus maiores alias. consequatur aut perferendis
-                  doloribus asperiores repellat. The wise man therefore always
-                  holds in these matters to this principle of selection: he
-                  rejects pleasures to secure other greater pleasures, or else
-                  he endures pains to avoid worse pains. pleasures have to be
-                  repudiated and annoyances accepted.
+                  {whatWeDo}
                 </p>
 
                 <div className="faq-style-one service-faq mt-40">
                   <h2 className="mb-30">Questões acerca do serviço</h2>
-                  <ServiceFaqV1 />
+                  <ServiceFaqV1 serviceSlug={slug} />
                 </div>
-                <div className="services-more mt-40">
+                {/*<div className="services-more mt-40">
                   <h2>Serviços Populares</h2>
                   <div className="row">
                     {PopularServiceData.map((popular) => (
@@ -80,7 +70,7 @@ const ServicesDetailsContent = ({ serviceInfo }) => {
                       />
                     ))}
                   </div>
-                </div>
+                </div>*/}
               </div>
               <div className="col-xl-4 col-lg-5 mt-md-50 mt-xs-50 pl-30 pl-md-15 pl-xs-15 services-sidebar">
                 <ServiceListWidget />
