@@ -1,22 +1,38 @@
 [
   {
     "id": 1,
-    "title": "Design de Software",
+    "title": "Arquitetura de Software",
+    "href": "/services-details/1",
     "icon": "fa-solid fa-angle-right"
   },
   {
     "id": 2,
-    "title": "Soluções Digitais",
+    "title": "Consultoria em TI",
+    "href": "/services-details/2",
     "icon": "fa-solid fa-angle-right"
   },
   {
     "id": 3,
-    "title": "Desenvolvimento Web",
+    "title": "Agência de Marketing Digital",
+    "href": "/services-details/3",
     "icon": "fa-solid fa-angle-right"
   },
   {
     "id": 4,
-    "title": "Branding Digital",
+    "title": "Segurança e Investimentos em TI",
+    "href": "/services-details/4",
+    "icon": "fa-solid fa-angle-right"
+  },
+  {
+    "id": 5,
+    "title": "Pesquisa de Mercado Digital",
+    "href": "/services-details/5",
+    "icon": "fa-solid fa-angle-right"
+  },
+  {
+    "id": 6,
+    "title": "Análise de Relatórios Digitais",
+    "href": "/services-details/6",
     "icon": "fa-solid fa-angle-right"
   }
 ]

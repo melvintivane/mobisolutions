@@ -1,38 +1,104 @@
-[
-  {
-    "id": 1,
-    "dataParent": "faqAccordion",
-    "accordionId": "headingOne",
-    "collapsedClass": "",
-    "dataTarget": "#collapseOne",
-    "ariaExpanded": "true",
-    "ariaControls": "collapseOne",
-    "title": "Onde posso obter suporte para software?",
-    "text": "Nossa equipe está disponível para ajudá-lo com dúvidas técnicas, bugs ou integração de funcionalidades. Você pode entrar em contacto pelo nosso formulário de suporte, e-mail ou chat direto no site.",
-    "collapseShow": "show"
-  },
-  {
-    "id": 2,
-    "dataParent": "faqAccordion",
-    "accordionId": "headingTwo",
-    "collapsedClass": "collapsed",
-    "dataTarget": "#collapseTwo",
-    "ariaExpanded": "false",
-    "ariaControls": "collapseTwo",
-    "title": "Quanto custa o desenvolvimento de software?",
-    "text": "O custo varia conforme a complexidade do projeto, funcionalidades desejadas e prazo. Oferecemos orçamentos personalizados após uma análise detalhada das suas necessidades.",
-    "collapseShow": ""
-  },
-  {
-    "id": 3,
-    "dataParent": "faqAccordion",
-    "accordionId": "headingThree",
-    "collapsedClass": "collapsed",
-    "dataTarget": "#collapseThree",
-    "ariaExpanded": "false",
-    "ariaControls": "collapseThree",
-    "title": "Que tipo de dados são necessários para desenvolver um software?",
-    "text": "Precisamos entender os fluxos de trabalho do seu negócio, dados que serão processados, usuários-alvo e funcionalidades desejadas. Essas informações nos ajudam a projetar uma solução personalizada e eficiente.",
-    "collapseShow": ""
-  }
-]
+{
+  "Arquitetura de Software": [
+    {
+      "id": 1,
+      "title": "Quais são as etapas do projeto de arquitetura de TI?",
+      "text": "Nossa abordagem inclui análise de requisitos, desenho da solução, seleção de tecnologias, implementação piloto e documentação completa."
+    },
+    {
+      "id": 2,
+      "title": "Como garantem a escalabilidade da arquitetura?",
+      "text": "Utilizamos princípios de arquitetura modular, balanceamento de carga e previsão de crescimento para garantir que sua infraestrutura cresça com seu negócio."
+    },
+    {
+      "id": 3,
+      "title": "Quais certificações sua equipe possui?",
+      "text": "Nossos arquitetos possuem certificações AWS, Azure, TOGAF e ITIL, garantindo soluções alinhadas com melhores práticas do mercado."
+    }
+  ],
+  "Consultoria em TI": [
+    {
+      "id": 1,
+      "title": "Qual o tempo médio de um projeto de consultoria?",
+      "text": "Variamos de 2 semanas para diagnósticos rápidos até 6 meses para transformações digitais completas, dependendo da complexidade."
+    },
+    {
+      "id": 2,
+      "title": "Como avaliam a maturidade digital da minha empresa?",
+      "text": "Utilizamos frameworks internacionais como COBIT e ITIL para avaliar processos, pessoas, tecnologia e governança."
+    },
+    {
+      "id": 3,
+      "title": "Oferecem suporte pós-consultoria?",
+      "text": "Sim, fornecemos pacotes de acompanhamento por 3-12 meses para garantir a implementação das recomendações."
+    }
+  ],
+  "Agência de Marketing Digital": [
+    {
+      "id": 1,
+      "title": "Quais canais digitais recomendam para meu negócio?",
+      "text": "Analisamos seu público-alvo para recomendar a combinação ideal entre SEO, mídia paga, redes sociais e email marketing."
+    },
+    {
+      "id": 2,
+      "title": "Como medem o ROI das campanhas?",
+      "text": "Utilizamos ferramentas de analytics com atribuição multicanal e relatórios personalizados que mostram o retorno por investimento."
+    },
+    {
+      "id": 3,
+      "title": "Qual o prazo para ver resultados?",
+      "text": "SEO leva 3-6 meses, enquanto campanhas pagas mostram resultados em 30-60 dias, dependendo do orçamento."
+    }
+  ],
+  "Segurança e Investimentos em TI": [
+    {
+      "id": 1,
+      "title": "Quais os principais riscos que identificam?",
+      "text": "Avaliamos vulnerabilidades técnicas, falhas processuais e riscos humanos, priorizando por impacto potencial no negócio."
+    },
+    {
+      "id": 2,
+      "title": "Como implementam políticas de segurança?",
+      "text": "Desenvolvemos normas personalizadas, treinamentos e sistemas de monitoramento contínuo adaptados à sua operação."
+    },
+    {
+      "id": 3,
+      "title": "Atendem requisitos de LGPD?",
+      "text": "Sim, nossos projetos incluem mapeamento de dados, relatórios de impacto e implementação de controles específicos."
+    }
+  ],
+  "Pesquisa de Mercado Digital": [
+    {
+      "id": 1,
+      "title": "Quais metodologias utilizam?",
+      "text": "Combinamos pesquisas quantitativas (surveys, analytics) com qualitativas (entrevistas, grupos focais) para insights completos."
+    },
+    {
+      "id": 2,
+      "title": "Como garantem a representatividade dos dados?",
+      "text": "Utilizamos técnicas de amostragem estatística e validação cruzada com fontes secundárias para maior confiabilidade."
+    },
+    {
+      "id": 3,
+      "title": "Posso comparar resultados ao longo do tempo?",
+      "text": "Sim, criamos bancos de dados históricos e painéis comparativos para análise temporal dos indicadores."
+    }
+  ],
+  "Análise de Relatórios Digitais": [
+    {
+      "id": 1,
+      "title": "Quais ferramentas de analytics utilizam?",
+      "text": "Trabalhamos com Google Analytics, Power BI, Tableau e soluções customizadas conforme necessidades específicas."
+    },
+    {
+      "id": 2,
+      "title": "Como transformam dados em insights acionáveis?",
+      "text": "Nossos analistas identificam padrões, criam visualizações claras e fazem recomendações estratégicas baseadas nos números."
+    },
+    {
+      "id": 3,
+      "title": "Com que frequência atualizam os relatórios?",
+      "text": "Oferecemos atualizações diárias, semanais ou mensais, com alertas para eventos fora do padrão esperado."
+    }
+  ]
+}

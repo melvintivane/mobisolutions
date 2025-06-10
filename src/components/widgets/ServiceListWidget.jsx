@@ -1,6 +1,5 @@
-import React from "react";
-import ServiceListWidgetData from "../../jsonData/ServiceListWidgetData.json";
 import { HashLink as Link } from "react-router-hash-link";
+import ServiceListWidgetData from "../../jsonData/ServiceListWidgetData.json";
 
 const ServiceListWidget = () => {
   return (
@@ -10,7 +9,7 @@ const ServiceListWidget = () => {
         <ul>
           {ServiceListWidgetData.map((service) => (
             <li key={service.id}>
-              <Link to={`/${service.listLink}#`}>
+              <Link to={`${service.listLink}`}>
                 {service.listTitle} <i className={service.listIcon}></i>
               </Link>
             </li>

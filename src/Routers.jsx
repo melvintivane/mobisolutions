@@ -1,19 +1,17 @@
-import React from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 import Home1 from "./pages/homePages/Home1";
-import Home1Dark from "./pages/homePages/Home1Dark";
 import Services3 from "./pages/servicePages/Services3";
 import ServicesDetails from "./pages/servicePages/ServicesDetails";
 // import Team2 from "./pages/teamPages/Team2";
 // import TeamDetails from "./pages/teamPages/TeamDetails";
-import ProjectDetails from "./pages/project/ProjectDetails";
+import ScrollToTop from "./components/utilities/ScrollToTop";
+import BlogSingle from "./pages/blogPages/BlogSingle";
+import BlogStandard from "./pages/blogPages/BlogStandard";
 import AboutUs from "./pages/innerPages/AboutUs";
-import Pricing from "./pages/innerPages/Pricing";
 import ContactUs from "./pages/innerPages/ContactUs";
 import Error404 from "./pages/innerPages/Error404";
-import BlogStandard from "./pages/blogPages/BlogStandard";
-import BlogSingle from "./pages/blogPages/BlogSingle";
-import ScrollToTop from "./components/utilities/ScrollToTop";
+import Pricing from "./pages/innerPages/Pricing";
+import ProjectDetails from "./pages/project/ProjectDetails";
 
 const Routers = () => {
   return (

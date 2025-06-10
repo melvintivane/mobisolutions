@@ -1,4 +1,3 @@
-import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import AboutListInfo from "../../jsonData/AboutListInfo.json";
 
@@ -40,7 +39,7 @@ const AboutV2 = () => {
                     {AboutListInfo.map((list) => (
                       <li key={list.id}>
                         <h4>
-                          <Link href="#">
+                          <Link to={list.href}>
                             {list.title}{" "}
                             <i className="fa-solid fa-angle-right"></i>
                           </Link>

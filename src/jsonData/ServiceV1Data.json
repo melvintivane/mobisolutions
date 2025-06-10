@@ -5,9 +5,17 @@
     "icon1Dark": "target.png",
     "thumb": "arquitectura-service.jpg",
     "icon2": "fas fa-long-arrow-right",
-    "text": "Planeamento estratégico de soluções digitais para alavancar resultados, com foco em usabilidade, escalabilidade e inovação.",
+    "text": "Desenvolvemos soluções robustas e escaláveis, focadas na criação de sistemas que atendem às necessidades específicas de negócios e garantem eficiência operacional.",
     "title": "Arquitetura de Software",
-    "serviceLink": "services-details"
+    "serviceLink": "services-details",
+"incluededServices": [
+  "Design de Sistemas e Estruturas de Software",
+  "Avaliação de Performance e Otimização",
+  "Consultoria em Melhores Práticas de Desenvolvimento",
+  "Equipe de Especialistas em Arquitetura de TI"
+],
+    "challenge": "No ambiente tecnológico em constante evolução, as empresas enfrentam o desafio de projetar soluções que sejam não apenas funcionais, mas também adaptáveis a mudanças futuras. Isso pode resultar em dificuldades na integração de sistemas e na manutenção da performance desejada. É crucial encontrar abordagens que garantam uma arquitetura sólida e eficiente.",
+    "whatWeDo": "Nosso compromisso é fornecer arquiteturas de software que atendam de forma precisa às demandas dos nossos clientes. Trabalhamos para identificar e superar obstáculos que possam comprometer a eficácia dos sistemas, assegurando que cada projeto seja desenvolvido com uma abordagem estratégica e inovadora. Enfrentamos os desafios da arquitetura de software com soluções criativas, sempre visando a entrega de resultados excepcionais."
   },
   {
     "id": 2,
@@ -17,7 +25,15 @@
     "icon2": "fas fa-long-arrow-right",
     "text": "Consultoria especializada para análise de requisitos, modernização de sistemas e adoção de boas práticas de engenharia de software.",
     "title": "Consultoria em TI",
-    "serviceLink": "services-details"
+    "serviceLink": "services-details",
+    "incluededServices": [
+      "Auditoria de Sistemas Legados",
+      "Planejamento de Transformação Digital",
+      "Treinamento em Metodologias Ágeis",
+      "Desenvolvimento Personalizado de Software"
+    ],
+    "challenge": "Em muitos casos, as organizações enfrentam desafios relacionados à obsolescência de sistemas e à necessidade de atender a demandas crescentes. Isso resulta na necessidade de estratégias eficazes para superar limitações e garantir que as soluções tecnológicas sejam eficientes e alinhadas às metas de negócio.",
+    "whatWeDo": "Nosso foco é oferecer consultoria que permita às empresas otimizar seus processos e modernizar suas infraestruturas. Trabalhamos para identificar e eliminar barreiras que possam comprometer a eficiência, assegurando que cada projeto seja desenvolvido com as melhores práticas do setor e entregue com qualidade."
   },
   {
     "id": 3,
@@ -25,9 +41,17 @@
     "icon1Dark": "analytics.png",
     "thumb": "digital-market-service.jpg",
     "icon2": "fas fa-long-arrow-right",
-    "text": "Implementação de métricas e ferramentas de monitoramento para acompanhar o desempenho de aplicações em tempo real.",
-    "title": "Monitoramento e Métricas",
-    "serviceLink": "services-details"
+    "text": "Oferecemos soluções criativas e estratégicas para impulsionar a presença online de marcas e maximizar o impacto de suas campanhas digitais.",
+    "title": "Agência de Marketing Digital",
+    "serviceLink": "services-details",
+ "incluededServices": [
+  "Desenvolvimento de Campanhas Publicitárias",
+  "Análise de Desempenho e Relatórios Mensais",
+  "Consultoria em Estratégias de Marketing Digital",
+  "Equipe de Criativos e Especialistas em Mídias Sociais"
+],
+    "challenge": "No dinâmico cenário digital atual, as empresas enfrentam a difícil tarefa de se destacar em meio à concorrência e captar a atenção de seu público-alvo. Isso pode gerar frustrações e dificuldades na execução de estratégias eficazes. É fundamental encontrar abordagens que garantam resultados tangíveis e uma comunicação clara com os consumidores.",
+    "whatWeDo": "Na nossa agência, estamos comprometidos em oferecer soluções personalizadas que atendam às necessidades específicas de cada cliente. Buscamos eliminar barreiras que possam limitar o sucesso das campanhas, assegurando que cada projeto seja gerido com criatividade e precisão. Enfrentamos os desafios do marketing digital com estratégias inovadoras, sempre focando na entrega de resultados excepcionais."
   },
   {
     "id": 4,
@@ -35,9 +59,17 @@
     "icon1Dark": "4.png",
     "thumb": "security-service.jpg",
     "icon2": "fas fa-long-arrow-right",
-    "text": "Aprimoramento contínuo de código e desempenho em mecanismos de busca, com foco em performance e SEO técnico.",
-    "title": "Otimização de Sistemas",
-    "serviceLink": "services-details"
+    "text": "Aprimoramento contínuo das práticas de segurança e gestão de investimentos em tecnologia, com foco na proteção de ativos digitais e otimização de recursos.",
+    "title": "Segurança e Investimentos em TI",
+    "serviceLink": "services-details",
+ "incluededServices": [
+  "Avaliação Contínua de Segurança da Informação",
+  "Suporte Especializado em Segurança Cibernética",
+  "Implementação de Soluções de Proteção de Dados",
+  "Consultoria em Estratégias de Investimento em TI"
+],
+    "challenge": "As organizações frequentemente enfrentam desafios relacionados à segurança de seus dados e à necessidade de alocação eficiente de recursos tecnológicos. Isso pode resultar em frustrações e dificuldades na proteção de ativos digitais. Encontrar soluções eficazes que garantam segurança e um retorno satisfatório sobre os investimentos é essencial.",
+    "whatWeDo": "Nosso compromisso é fornecer soluções robustas que atendam às necessidades de segurança e investimento de nossos clientes. Trabalhamos para identificar e eliminar obstáculos que possam comprometer a proteção de dados e a eficácia dos investimentos em tecnologia, garantindo que cada projeto seja gerido com excelência e foco em resultados significativos."
   },
   {
     "id": 5,
@@ -45,9 +77,17 @@
     "icon1Dark": "5.png",
     "thumb": "marketing-service.jpg",
     "icon2": "fas fa-long-arrow-right",
-    "text": "Criação de campanhas de divulgação digital para lançamento de produtos e soluções baseadas em software.",
-    "title": "Lançamento de Produtos Digitais",
-    "serviceLink": "services-details"
+    "text": "Desenvolvimento de estratégias de pesquisa para entender o comportamento do consumidor e identificar oportunidades de mercado para produtos e soluções digitais.",
+    "title": "Pesquisa de Mercado Digital",
+    "serviceLink": "services-details",
+ "incluededServices": [
+  "Análise de Tendências de Mercado",
+  "Relatórios de Comportamento do Consumidor",
+  "Consultoria em Estratégias de Marketing Digital",
+  "Equipe de Especialistas em Pesquisa"
+],
+    "challenge": "As empresas frequentemente enfrentam o desafio de compreender as dinâmicas do mercado e as necessidades dos consumidores. Isso pode resultar em frustrações ao tentar alinhar ofertas e estratégias de marketing. É essencial encontrar soluções que garantam insights valiosos, mesmo em um ambiente em constante mudança.",
+    "whatWeDo": "Nosso compromisso é fornecer soluções de pesquisa que atendam às necessidades dos nossos clientes. Trabalhamos para identificar e eliminar barreiras que possam dificultar a compreensão do mercado, garantindo que cada projeto seja executado com rigor e foco em resultados significativos. Enfrentamos desafios com abordagens estratégicas, sempre visando a entrega de insights excepcionais."
   },
   {
     "id": 6,
@@ -55,8 +95,16 @@
     "icon1Dark": "6.png",
     "thumb": "20945567.jpg",
     "icon2": "fas fa-long-arrow-right",
-    "text": "Desenvolvimento de sistemas sob medida, utilizando tecnologias modernas para web, mobile e cloud.",
-    "title": "Desenvolvimento Sob Medida",
-    "serviceLink": "services-details"
+    "text": "Desenvolvimento de relatórios detalhados para avaliar o desempenho de campanhas digitais e entender o comportamento do usuário em plataformas online.",
+    "title": "Análise de Relatórios Digitais",
+    "serviceLink": "services-details",
+ "incluededServices": [
+  "Análise de Dados de Campanhas Digitais",
+  "Relatórios de Desempenho e KPIs",
+  "Consultoria em Otimização de Estratégias Digitais",
+  "Equipe de Especialistas em Análise de Dados"
+],
+    "challenge": "As empresas frequentemente enfrentam o desafio de interpretar grandes volumes de dados e extrair insights significativos. Isso pode levar a dificuldades na tomada de decisões informadas e na otimização de estratégias. Encontrar soluções que garantam uma análise clara e eficaz é essencial para o sucesso.",
+    "whatWeDo": "Nosso compromisso é fornecer análises abrangentes que atendam às necessidades dos nossos clientes. Trabalhamos para identificar e eliminar obstáculos que possam comprometer a interpretação dos dados, garantindo que cada relatório seja elaborado com precisão e foco em resultados acionáveis. Enfrentamos desafios com metodologias bem definidas, sempre visando a entrega de insights valiosos."
   }
 ]

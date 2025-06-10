@@ -1,14 +1,45 @@
-import React from "react";
-import HeaderV1 from "../../components/header/HeaderV1";
-import BreadCrumb from "../../components/breadCrumb/BreadCrumb";
-import BlogSingleContent from "../../components/blog/BlogSingleContent";
-import FooterV1 from "../../components/footer/FooterV1";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import BlogV1Data from "../../jsonData/BlogV1Data.json";
+import BlogSingleContent from "../../components/blog/BlogSingleContent";
+import BreadCrumb from "../../components/breadCrumb/BreadCrumb";
+import FooterV1 from "../../components/footer/FooterV1";
+import HeaderV1 from "../../components/header/HeaderV1";
 
 const BlogSingle = () => {
   const { id } = useParams();
-  const data = BlogV1Data.filter((blog) => blog.id === parseInt(id))[0];
+  const [currentBlog, setCurrentBlog] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [allPosts, setAllPosts] = useState([]); // Para navegação entre posts
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        // Busca o post específico
+        const postResponse = await fetch(`http://localhost:5000/api/posts/${id}`);
+        if (!postResponse.ok) throw new Error("Post não encontrado");
+        const postData = await postResponse.json();
+        setCurrentBlog(postData);
+
+        // Busca todos os posts apenas para navegação (próximo/anterior)
+        const allResponse = await fetch("http://localhost:5000/api/posts");
+        if (allResponse.ok) {
+          const allData = await allResponse.json();
+          setAllPosts(allData);
+        }
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+  }, [id]);
+
+  if (loading) return <div className="text-center py-5">Carregando...</div>;
+  if (error) return <div className="text-center py-5">Erro: {error}</div>;
+  if (!currentBlog) return <div className="text-center py-5">Post não encontrado</div>;
 
   return (
     <>
@@ -19,7 +50,11 @@ const BlogSingle = () => {
         bottomSpace="pb-0"
         offsetClass="offset-lg-1"
       />
-      <BlogSingleContent blogInfo={data} totalBlogs={BlogV1Data.length} />
+      <BlogSingleContent 
+        blogInfo={currentBlog} 
+        totalBlogs={allPosts.length} 
+        allPosts={allPosts} 
+      />
       <FooterV1 />
     </>
   );
