@@ -89,7 +89,7 @@ const BlogStandardContent = () => {
             <div className="blog-content col-xl-10 offset-xl-1 col-md-12">
               <div className="blog-item-box">
                 {currentBlogData.map((blog) => (
-                  <SingleBlogContentV1 blog={blog} key={blog.id} />
+                  <SingleBlogContentV1 blog={blog} key={blog._id} />
                 ))}
               </div>
               <Pagination

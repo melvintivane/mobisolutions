@@ -1,25 +1,42 @@
 import { Link } from "react-router-dom";
-import BlogCommentData from "../../jsonData/BlogCommentData.json";
-import BlogV1Data from "../../jsonData/BlogV1Data.json";
 import Animate from "../animation/Animate";
 import SocialShare2 from "../others/SocialShare2";
 import handleSmoothScroll from "../utilities/handleSmoothScroll";
-import BlogForm from "./BlogForm";
-import SingleBlogComment from "./SingleBlogComment";
 
-const BlogSingleContent = ({ blogInfo, totalBlogs }) => {
-  const { id, thumb,authorProfileImg, authorName, date, title, mainText,quoteText, authorResume } = blogInfo || {};
+const BlogSingleContent = ({ blogInfo, allPosts = [] }) => {
+  const {
+    _id,
+    blogTitle,
+    authorName,
+    date,
+    mainText,
+    quoteText,
+    thumb,
+    authorProfileImg,
+    authorResume,
+  } = blogInfo || {};
 
-  // Blogs Navigation
-  const currentId = id ? parseInt(id.toString(), 10) : 1;
 
-  // Calculate the previous and next IDs dynamically
-  const previousId = currentId === 1 ? totalBlogs : currentId - 1;
-  const nextId = currentId === totalBlogs ? 1 : currentId + 1;
+  // Formatação da data
+ const formatDate = (date) => {
+  const options = {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+  };
 
-  // Get the previous and next project titles
-  const previousBlog = BlogV1Data.find((blog) => blog.id === previousId);
-  const nextBlog = BlogV1Data.find((blog) => blog.id === nextId);
+  return new Intl.DateTimeFormat('pt-BR', options).format(date);
+};
+
+// Uso da formatação de data
+const dateFormatted = new Date(date);
+const formattedDate = formatDate(dateFormatted);
+
+  // Navegação entre posts usando allPosts
+  const currentIndex = allPosts.findIndex((post) => post._id === _id);
+  const previousPost = currentIndex > 0 ? allPosts[currentIndex - 1] : null;
+  const nextPost =
+    currentIndex < allPosts.length - 1 ? allPosts[currentIndex + 1] : null;
 
   // Get the first two words of the project title
   const getFirstTwoWords = (text) =>
@@ -37,7 +54,7 @@ const BlogSingleContent = ({ blogInfo, totalBlogs }) => {
                   <div className="blog-style-one item">
                     <div className="blog-item-box">
                       <div className="thumb">
-                        <img src={thumb} alt="Thumb" />
+                        <img src={`http://localhost:5000/uploads/${thumb}`} alt="Thumb" />
                       </div>
                       <div className="info">
                         <div className="meta">
@@ -47,17 +64,14 @@ const BlogSingleContent = ({ blogInfo, totalBlogs }) => {
                               <Link to="#">{authorName}</Link>
                             </li>
                             <li>
-                              <i className="fa-solid fa-calendar-alt"></i> {date}
+                              <i className="fa-solid fa-calendar-alt"></i>{" "}
+                              {formattedDate}
                             </li>
                           </ul>
                         </div>
-                        <p>
-                          {mainText}
-                        </p>
-                        
-                        <blockquote>
-                          {quoteText}
-                        </blockquote>
+                        <p>{mainText}</p>
+
+                        <blockquote>{quoteText}</blockquote>
                         {/*<p>
                           Desenhos podem ser seguidos, melhorados, mas não
                           sociáveis. Fingiu de imediato com seriedade. Veja
@@ -110,9 +124,7 @@ const BlogSingleContent = ({ blogInfo, totalBlogs }) => {
                           {authorName}
                         </Link>
                       </h4>
-                      <p>
-                        {authorResume}
-                      </p>
+                      <p>{authorResume}</p>
                     </div>
                   </div>
                   {/* <BlogTagsShare /> */}
@@ -134,35 +146,39 @@ const BlogSingleContent = ({ blogInfo, totalBlogs }) => {
                     </div>
                   </div>
 
-                  {/* Post Pagination */}
+                  {/* Post Pagination - Versão Corrigida */}
                   <div className="post-pagi-area">
-                    <div className="post-previous">
-                      <Link to={`/blog/${previousId}`}>
-                        <div className="icon">
-                          <i className="fa-solid fa-angle-double-left"></i>
-                        </div>
-                        <div className="nav-title">
-                          {" "}
-                          Postagem Anterior{" "}
-                          <h5>{getFirstTwoWords(previousBlog?.title)}</h5>
-                        </div>
-                      </Link>
-                    </div>
-                    <div className="post-next">
-                      <Link to={`/blog/${nextId}`}>
-                        <div className="nav-title">
-                          Próxima Postagem{" "}
-                          <h5>{getFirstTwoWords(nextBlog?.title)}</h5>
-                        </div>
-                        <div className="icon">
-                          <i className="fa-solid fa-angle-double-right"></i>
-                        </div>
-                      </Link>
-                    </div>
+                    {previousPost && (
+                      <div className="post-previous">
+                        <Link to={`/blog/${previousPost._id}`}>
+                          <div className="icon">
+                            <i className="fa-solid fa-angle-double-left"></i>
+                          </div>
+                          <div className="nav-title">
+                            Postagem Anterior
+                            <h5>{getFirstTwoWords(previousPost.blogTitle)}</h5>
+                          </div>
+                        </Link>
+                      </div>
+                    )}
+
+                    {nextPost && (
+                      <div className="post-next">
+                        <Link to={`/blog/${nextPost._id}`}>
+                          <div className="nav-title">
+                            Próxima Postagem
+                            <h5>{getFirstTwoWords(nextPost.blogTitle)}</h5>
+                          </div>
+                          <div className="icon">
+                            <i className="fa-solid fa-angle-double-right"></i>
+                          </div>
+                        </Link>
+                      </div>
+                    )}
                   </div>
 
                   {/* blog-comments */}
-                  <div className="blog-comments">
+                  {/*<div className="blog-comments">
                     <div className="comments-area">
                       <div className="comments-title">
                         <h3>{`3 Comments On “${title}”`}</h3>
@@ -177,7 +193,7 @@ const BlogSingleContent = ({ blogInfo, totalBlogs }) => {
                       </div>
                       <BlogForm />
                     </div>
-                  </div>
+                  </div>*/}
                 </div>
               </Animate>
             </div>
