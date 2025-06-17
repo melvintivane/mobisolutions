@@ -54,7 +54,7 @@ const formattedDate = formatDate(dateFormatted);
                   <div className="blog-style-one item">
                     <div className="blog-item-box">
                       <div className="thumb">
-                        <img src={`http://localhost:5000/uploads/${thumb}`} alt="Thumb" />
+                        <img src={`http://localhost:5000${thumb}`} alt="Thumb" />
                       </div>
                       <div className="info">
                         <div className="meta">
