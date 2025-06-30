@@ -1,5 +1,5 @@
-import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
+import { useLanguage } from "../../context/LanguageContext";
 
 const BreadCrumb = ({
   title1,
@@ -8,6 +8,12 @@ const BreadCrumb = ({
   bottomSpace,
   offsetClass,
 }) => {
+  const { language } = useLanguage();
+  const breadcrumbText = {
+    pt: "Ínicio",
+    en: "Home",
+  };
+  const t = breadcrumbText[language] || breadcrumbText["pt"]; // Fallback to Portuguese if language not found
   return (
     <>
       <div
@@ -29,7 +35,7 @@ const BreadCrumb = ({
                   <ol className="breadcrumb">
                     <li>
                       <Link to="/#">
-                        <i className="fa-solid fa-home"></i> Ínicio
+                        <i className="fa-solid fa-home"></i> {t}
                       </Link>
                     </li>
                     <li className="active">

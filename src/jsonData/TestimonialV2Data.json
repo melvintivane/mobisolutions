@@ -1,4 +1,5 @@
-[
+{
+  "pt":[
   {
     "id": 1,
     "text": "“A consultoria de desenvolvimento de software foi fundamental para nossa transformação digital. Trabalhamos de perto com a equipe para adaptar soluções inovadoras que atendem às necessidades do nosso negócio. A experiência foi incrível e os resultados falam por si mesmos.”",
@@ -20,4 +21,28 @@
     "name": "Istiak Ahmed",
     "designation": "Senior Developer"
   }
-]
+] ,
+  "en":[
+  {
+    "id": 1,
+    "text": "“The software development consultancy was crucial for our digital transformation. We worked closely with the team to adapt innovative solutions that meet our business needs. The experience was amazing and the results speak for themselves.”",
+    "thumb": "9.jpg",
+    "name": "Matthew J. Wyman",
+    "designation": "Senior Consultant"
+  },
+  {
+    "id": 2,
+    "text": "“The development team provided customized digital solutions that helped our company reach new heights. The collaboration was very productive, and the results exceeded our expectations.”",
+    "thumb": "10.jpg",
+    "name": "Anthom Bu Spar",
+    "designation": "Marketing Manager"
+  },
+  {
+    "id": 3,
+    "text": "“Working with the developers was an enriching experience. They brought creative and efficient ideas to our project, resulting in a robust and scalable software. I highly recommend the team.”",
+    "thumb": "11.jpg",
+    "name": "Istiak Ahmed",
+    "designation": "Senior Developer"
+  }
+  ]
+}

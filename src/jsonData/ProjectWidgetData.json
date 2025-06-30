@@ -1,82 +1,258 @@
-[
+{
+  "pt": [
     {
-        "id": 2,
-        "infoName": "Cliente:",
-        "infoValue": "EP Management & Consultancy"
+      "id": 2,
+      "projectInfos": [
+        {
+          "infoName": "Cliente",
+          "infoValue": "EP Management & Consultancy"
+        },
+        {
+          "infoName": "Tipo de Projeto",
+          "infoValue": "Plataforma de Recrutamento"
+        },
+        {
+          "infoName": "Data",
+          "infoValue": "25 Fevereiro de 2024"
+        },
+        {
+          "infoName": "Endereço",
+          "infoValue": "Maputo, Moçambique"
+        }
+      ]
     },
     {
-        "id": 2,
-        "infoName": "Project Type:",
-        "infoValue": "Plataforma de Recrutamento"
+      "id": 3,
+      "projectInfos": [
+        {
+          "infoName": "Cliente",
+          "infoValue": "Fundação Samora Machel"
+        },
+        {
+          "infoName": "Tipo de Projeto",
+          "infoValue": "Website Institucional"
+        },
+        {
+          "infoName": "Data",
+          "infoValue": "15 Março de 2024"
+        },
+        {
+          "infoName": "Endereço",
+          "infoValue": "Maputo, Moçambique"
+        }
+      ]
     },
     {
-        "id": 2,
-        "infoName": "Data:",
-        "infoValue": "25 Fevereiro de 2024"
+      "id": 4,
+      "projectInfos": [
+        {
+          "infoName": "Cliente",
+          "infoValue": "Click Tech Moz"
+        },
+        {
+          "infoName": "Tipo de Projeto",
+          "infoValue": "Loja Virtual"
+        },
+        {
+          "infoName": "Data",
+          "infoValue": "10 Abril de 2024"
+        },
+        {
+          "infoName": "Endereço",
+          "infoValue": "Maputo, Moçambique"
+        }
+      ]
     },
     {
-        "id": 2,
-        "infoName": "Endereço:",
-        "infoValue": "Maputo, Moçambique"
+      "id": 5,
+      "projectInfos": [
+        {
+          "infoName": "Cliente",
+          "infoValue": "Correio 24"
+        },
+        {
+          "infoName": "Tipo de Projeto",
+          "infoValue": "Sistema de Correio"
+        },
+        {
+          "infoName": "Data",
+          "infoValue": "20 Maio de 2024"
+        },
+        {
+          "infoName": "Endereço",
+          "infoValue": "Maputo, Moçambique"
+        }
+      ]
     },
     {
-        "id": 3,
-        "infoName": "Cliente:",
-        "infoValue": "Fundação Samora Machel"
+      "id": 6,
+      "projectInfos": [
+        {
+          "infoName": "Cliente",
+          "infoValue": "Flogas Eletricidade e Mecânicas, Lda"
+        },
+        {
+          "infoName": "Tipo de Projeto",
+          "infoValue": "Landing Page"
+        },
+        {
+          "infoName": "Data",
+          "infoValue": "25 Maio de 2025"
+        },
+        {
+          "infoName": "Endereço",
+          "infoValue": "Maputo, Moçambique"
+        }
+      ]
     },
     {
-        "id": 3,
-        "infoName": "Project Type:",
-        "infoValue": "Website Institucional"
-    },
-    {
-        "id": 3,
-        "infoName": "Data:",
-        "infoValue": "15 Março de 2024"
-    },
-    {
-        "id": 3,
-        "infoName": "Endereço:",
-        "infoValue": "Maputo, Moçambique"
-    },
-    {
-        "id": 4,
-        "infoName": "Cliente:",
-        "infoValue": "Click Tech Moz"
-    },
-    {
-        "id": 4,
-        "infoName": "Project Type:",
-        "infoValue": "Loja Virtual"
-    },
-    {
-        "id": 4,
-        "infoName": "Data:",
-        "infoValue": "10 Abril de 2024"
-    },
-    {
-        "id": 4,
-        "infoName": "Endereço:",
-        "infoValue": "Maputo, Moçambique"
-    },
-    {
-        "id": 5,
-        "infoName": "Cliente:",
-        "infoValue": "Correio 24"
-    },
-    {
-        "id": 5,
-        "infoName": "Project Type:",
-        "infoValue": "Sistema de Correio"
-    },
-    {
-        "id": 5,
-        "infoName": "Data:",
-        "infoValue": "20 Maio de 2024"
-    },
-    {
-        "id": 5,
-        "infoName": "Endereço:",
-        "infoValue": "Maputo, Moçambique"
+      "id": 7,
+      "projectInfos": [
+        {
+          "infoName": "Cliente",
+          "infoValue": "Synapse Strategy and Innovation"
+        },
+        {
+          "infoName": "Tipo de Projeto",
+          "infoValue": "Website Institucional"
+        },
+        {
+          "infoName": "Data",
+          "infoValue": "15 Maio de 2025"
+        },
+        {
+          "infoName": "Endereço",
+          "infoValue": "Maputo, Moçambique"
+        }
+      ]
     }
-]
+  ],
+  "en": [
+    {
+      "id": 2,
+      "projectInfos": [
+        {
+          "infoName": "Client",
+          "infoValue": "EP Management & Consultancy"
+        },
+        {
+          "infoName": "Project Type",
+          "infoValue": "Recruitment Platform"
+        },
+        {
+          "infoName": "Date",
+          "infoValue": "February 25, 2024"
+        },
+        {
+          "infoName": "Address",
+          "infoValue": "Maputo, Mozambique"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "projectInfos": [
+        {
+          "infoName": "Client",
+          "infoValue": "Samora Machel Foundation"
+        },
+        {
+          "infoName": "Project Type",
+          "infoValue": "Institutional Website"
+        },
+        {
+          "infoName": "Date",
+          "infoValue": "March 15, 2024"
+        },
+        {
+          "infoName": "Address",
+          "infoValue": "Maputo, Mozambique"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "projectInfos": [
+        {
+          "infoName": "Client",
+          "infoValue": "Click Tech Moz"
+        },
+        {
+          "infoName": "Project Type",
+          "infoValue": "Online Store"
+        },
+        {
+          "infoName": "Date",
+          "infoValue": "April 10, 2024"
+        },
+        {
+          "infoName": "Address",
+          "infoValue": "Maputo, Mozambique"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "projectInfos": [
+        {
+          "infoName": "Client",
+          "infoValue": "Correio 24"
+        },
+        {
+          "infoName": "Project Type",
+          "infoValue": "Mail System"
+        },
+        {
+          "infoName": "Date",
+          "infoValue": "May 20, 2024"
+        },
+        {
+          "infoName": "Address",
+          "infoValue": "Maputo, Mozambique"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "projectInfos": [
+        {
+          "infoName": "Client",
+          "infoValue": "Flogas Electricity and Mechanics, Lda"
+        },
+        {
+          "infoName": "Project Type",
+          "infoValue": "Landing Page"
+        },
+        {
+          "infoName": "Date",
+          "infoValue": "May 25, 2025"
+        },
+        {
+          "infoName": "Address",
+          "infoValue": "Maputo, Mozambique"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "projectInfos": [
+        {
+          "infoName": "Client",
+          "infoValue": "Synapse Strategy and Innovation"
+        },
+        {
+          "infoName": "Project Type",
+          "infoValue": "Institutional Website"
+        },
+        {
+          "infoName": "Date",
+          "infoValue": "May 15, 2025"
+        },
+        {
+          "infoName": "Address",
+          "infoValue": "Maputo, Mozambique"
+        }
+      ]
+    }
+  ]
+}

@@ -1,4 +1,5 @@
-[
+{
+  "pt":[
   {
     "id": 1,
     "thumb": "banner-3.jpg",
@@ -59,4 +60,69 @@
     "btnLink": "services-details",
     "btnIcon": "fa-solid fa-arrow-right"
   }
+],
+  "en":[
+  {
+    "id": 1,
+    "thumb": "banner-3.jpg",
+    "serviceIcon": "flaticon-planning",
+    "serviceTitle": "Software Planning",
+    "serviceText": "We develop digital solutions aligned with business needs, focusing on innovation and efficiency. Our approach transforms ideas into tangible results.",
+    "btnText": "Learn More",
+    "btnLink": "services-details",
+    "btnIcon": "fa-solid fa-arrow-right"
+  },
+  {
+    "id": 2,
+    "thumb": "banner-3.jpg",
+    "serviceIcon": "flaticon-startup-6",
+    "serviceTitle": "Investment Planning",
+    "serviceText": "We analyze and plan technology investments, providing sustainable growth for companies in the digital landscape.",
+    "btnText": "Learn More",
+    "btnLink": "services-details",
+    "btnIcon": "fa-solid fa-arrow-right"
+  },
+  {
+    "id": 3,
+    "thumb": "banner-3.jpg",
+    "serviceIcon": "flaticon-marketing-agent",
+    "serviceTitle": "Digital Marketing Agency",
+    "serviceText": "We create digital marketing strategies that connect brands with their audiences, enhancing online presence and business results.",
+    "btnText": "Learn More",
+    "btnLink": "services-details",
+    "btnIcon": "fa-solid fa-arrow-right"
+  },
+  {
+    "id": 4,
+    "thumb": "banner-3.jpg",
+    "serviceIcon": "flaticon-secure-1",
+    "serviceTitle": "IT Security and Investments",
+    "serviceText": "We offer security solutions to protect your digital investments, ensuring the integrity and reliability of your platforms.",
+    "btnText": "Learn More",
+    "btnLink": "services-details",
+    "btnIcon": "fa-solid fa-arrow-right"
+  },
+  {
+    "id": 5,
+    "thumb": "banner-3.jpg",
+    "serviceIcon": "flaticon-data-analysis-1",
+    "serviceTitle": "Digital Market Research",
+    "serviceText": "We conduct market research to identify trends and opportunities, helping businesses position themselves strategically in the digital market.",
+    "btnText": "Learn More",
+    "btnLink": "services-details",
+    "btnIcon": "fa-solid fa-arrow-right"
+  },
+  {
+    "id": 6,
+    "thumb": "banner-3.jpg",
+    "serviceIcon": "flaticon-research-1",
+    "serviceTitle": "Digital Report Analysis",
+    "serviceText": "We provide data analysis and digital reporting to optimize strategic decisions and improve the performance of your online operations.",
+    "btnText": "Learn More",
+    "btnLink": "services-details",
+    "btnIcon": "fa-solid fa-arrow-right"
+  }
+  
 ]
+
+}

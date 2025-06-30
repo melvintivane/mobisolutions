@@ -1,4 +1,5 @@
-[
+{
+  "pt":[
   {
     "id": 1,
     "planClass": "",
@@ -68,4 +69,77 @@
     "btnText": "Selecionar Plano",
     "btnClass": "btn-dark"
   }
+],
+"en":[
+  {
+    "id": 1,
+    "planClass": "",
+    "plan": "Basic Package",
+    "planInfo": "Ideal for small institutional websites, creative portfolios, or personal blogs, lightweight and efficient.",
+    "planPrice": 12000,
+    "priceType": "/ Year",
+    "list1": "5 GB SSD disk space",
+    "list2": "10 GB monthly traffic",
+    "list3": "Up to 5 free email accounts",
+    "list4": "1 MySQL database",
+    "list5": "Free SSL certificate",
+    "list6": "cPanel control panel",
+    "list7": "Technical support via email and ticket",
+    "list8": "Automatic weekly backup",
+    "list9": "Optimized resources for WordPress and CMSs",
+    "icon1": "fa-solid fa-check-circle",
+    "icon2": "fa-solid fa-check-circle",
+    "icon3": "fa-solid fa-times-circle",
+    "btnLink": "contact-us",
+    "btnText": "Select Plan",
+    "btnClass": "btn-dark"
+  },
+  {
+    "id": 2,
+    "planClass": "active",
+    "plan": "Premium Package",
+    "planInfo": "Recommended for small to medium-sized businesses with greater communication and storage needs.",
+    "planPrice": 25000,
+    "priceType": "/ Year",
+    "list1": "20 GB SSD disk space",
+    "list2": "50 GB monthly traffic",
+    "list3": "Up to 15 free email accounts",
+    "list4": "5 MySQL databases",
+    "list5": "Free SSL certificate",
+    "list6": "cPanel control panel",
+    "list7": "Technical support via email, ticket, and chat",
+    "list8": "Automatic daily backup",
+    "list9": "Unlimited FTP access",
+    "icon1": "fa-solid fa-check-circle",
+    "icon2": "fa-solid fa-check-circle",
+    "icon3": "fa-solid fa-check-circle",
+    "btnLink": "contact-us",
+    "btnText": "Select Plan",
+    "btnClass": "btn-light"
+  },
+  {
+    "id": 3,
+    "planClass": "",
+    "plan": "Advanced Package",
+    "planInfo": "Ideal for e-commerce, content portals, or businesses that require high performance.",
+    "planPrice": 55000,
+    "priceType": "/ Year",
+    "list1": "50 GB SSD disk space",
+    "list2": "Unlimited monthly traffic",
+    "list3": "Up to 25 free email accounts",
+    "list4": "Unlimited databases",
+    "list5": "Free SSL certificate",
+    "list6": "cPanel control panel",
+    "list7": "24/7 technical support (email, chat, and phone)",
+    "list8": "Daily backups with extended retention",
+    "list9": "Optimized resources for WordPress and CMSs",
+    "icon1": "fa-solid fa-check-circle",
+    "icon2": "fa-solid fa-check-circle",
+    "icon3": "fa-solid fa-check-circle",
+    "btnLink": "contact-us",
+    "btnText": "Select Plan",
+    "btnClass": "btn-dark"
+  }
 ]
+
+}

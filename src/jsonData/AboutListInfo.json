@@ -1,4 +1,5 @@
-[
+{
+  "pt":[
   {
     "id": 1,
     "title": "Arquitetura de Software",
@@ -35,4 +36,44 @@
     "href": "/services-details/6",
     "icon": "fa-solid fa-angle-right"
   }
-]
+],
+  "en":[
+  {
+    "id": 1,
+    "title": "Software Architecture",
+    "href": "/services-details/1",
+    "icon": "fa-solid fa-angle-right"
+  },
+  {
+    "id": 2,
+    "title": "IT Consulting",
+    "href": "/services-details/2",
+    "icon": "fa-solid fa-angle-right"
+  },
+  {
+    "id": 3,
+    "title": "Digital Marketing Agency",
+    "href": "/services-details/3",
+    "icon": "fa-solid fa-angle-right"
+  },
+  {
+    "id": 4,
+    "title": "IT Security and Investments",
+    "href": "/services-details/4",
+    "icon": "fa-solid fa-angle-right"
+  },
+  {
+    "id": 5,
+    "title": "Digital Market Research",
+    "href": "/services-details/5",
+    "icon": "fa-solid fa-angle-right"
+  },
+  {
+    "id": 6,
+    "title": "Digital Report Analysis",
+    "href": "/services-details/6",
+    "icon": "fa-solid fa-angle-right"
+  }
+  ]
+
+}

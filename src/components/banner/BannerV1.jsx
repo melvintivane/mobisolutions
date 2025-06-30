@@ -1,7 +1,26 @@
 import { HashLink as Link } from "react-router-hash-link";
+import { useLanguage } from "../../context/LanguageContext";
 import Animate from "../animation/Animate";
 
 const BannerV1 = () => {
+  const { language } = useLanguage();
+  const bannerText = {
+    pt: {
+      title: "Soluções",
+      titleStrong : "Criativas",
+      description:
+        "Encorajamos entusiasmo e acompanhamos de forma apropriada por que o riso impulsiona o esforço. Na minha experiência, a dedicação e o foco resultam em resultados perfeitos.",
+      buttonText: "Começar Agora",
+    },
+    en: {
+      title: "Creative ",
+      titleStrong : "Solutions",
+      description:
+        "We encourage enthusiasm and appropriately follow through because laughter drives effort. In my experience, dedication and focus lead to perfect results.",
+      buttonText: "Get Started Now",
+    },
+  };  
+  const t = bannerText[language] || bannerText["pt"]; // Fallback to Portuguese if language not found
   return (
     <>
       <div
@@ -23,7 +42,7 @@ const BannerV1 = () => {
                       duration="400ms"
                     >
                       <h2>
-                        Soluções <strong>Criativas</strong>
+                        {t.title} <strong>{t.titleStrong}</strong>
                       </h2>
                     </Animate>
                     <Animate
@@ -32,10 +51,7 @@ const BannerV1 = () => {
                       duration="400ms"
                     >
                       <p>
-                        Encorajamos entusiasmo e acompanhamos de forma
-                        apropriada por que o riso impulsiona o esforço. Na minha
-                        experiência, a dedicação e o foco resultam em resultados
-                        perfeitos.
+                        {t.description}
                       </p>
                     </Animate>
                     <Animate
@@ -48,7 +64,7 @@ const BannerV1 = () => {
                           className="btn btn-md btn-gradient animation"
                           to="/contact-us#"
                         >
-                          Começar Agora
+                          {t.buttonText}
                         </Link>
                       </div>
                     </Animate>

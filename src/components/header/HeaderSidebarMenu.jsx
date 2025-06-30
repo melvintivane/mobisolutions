@@ -1,15 +1,20 @@
-import React, { useState } from "react";
-import SocialShare2 from "../others/SocialShare2";
+import { useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import { toast } from "react-toastify";
+import { useLanguage } from "../../context/LanguageContext";
+import HeaderSideBarMenu from "../../translations/HeaderSideBarMenu.json";
+import SocialShare2 from "../others/SocialShare2";
+import LanguageToggle from "./LanguageToggle";
 
 const HeaderSidebarMenu = ({ isSidebarOpen, removeClasses, addClasses }) => {
   const [darkMode, setDarkMode] = useState(false);
+  const { language } = useLanguage();
+  const t = HeaderSideBarMenu[language] || HeaderSideBarMenu["pt"]; // Fallback to Portuguese if language not found
 
   const handleEmail = (event) => {
     event.preventDefault();
     event.target.reset();
-    toast.success("Obrigado pelo seu e-mail!");
+    toast.success(t.toastSuccess);
   };
 
   return (
@@ -24,6 +29,7 @@ const HeaderSidebarMenu = ({ isSidebarOpen, removeClasses, addClasses }) => {
                 ></i>
               </button>
             </li> */}
+            <LanguageToggle/>
             <li className="side-menu">
               <Link to={void 0} onClick={addClasses}>
                 <span className="bar-1"></span>
@@ -45,14 +51,7 @@ const HeaderSidebarMenu = ({ isSidebarOpen, removeClasses, addClasses }) => {
           </div>
           <div className="widget">
             <p>
-              Desenvolvimento de software é o componente essencial da
-              transformação digital que utiliza a Internet e tecnologias
-              avançadas, como computadores, dispositivos móveis e diversas
-              plataformas digitais, para criar soluções inovadoras que atendem
-              às necessidades de empresas e usuários. Uma empresa de
-              desenvolvimento de software projeta, implementa e mantém sistemas,
-              aplicativos e plataformas que otimizam processos, impulsionam a
-              produtividade e promovem a inovação nos mais diversos setores.
+              {t.description}
             </p>
           </div>
           <div className="widget address">
@@ -60,8 +59,8 @@ const HeaderSidebarMenu = ({ isSidebarOpen, removeClasses, addClasses }) => {
               <ul>
                 <li>
                   <div className="content">
-                    <p>Endereço</p>
-                    <strong>Av. Industrias, n° 3787, Liberdade</strong>
+                    <p>{t.adress}</p>
+                    <strong>{t.adressValue}</strong>
                   </div>
                 </li>
                 <li>
@@ -72,7 +71,7 @@ const HeaderSidebarMenu = ({ isSidebarOpen, removeClasses, addClasses }) => {
                         href="mailto:contact@mymobisolutions.com"
                         className="color-para"
                       >
-                        contact@mymobisolutions.com
+                        {t.email}
                       </a>
                     </strong>
                   </div>
@@ -82,7 +81,7 @@ const HeaderSidebarMenu = ({ isSidebarOpen, removeClasses, addClasses }) => {
                     <p>Contacto</p>
                     <strong>
                       <a href="tel:+258 84 039 6163" className="color-para">
-                        +258 84 039 6163
+                        {t.contact}
                       </a>
                     </strong>
                   </div>
@@ -91,12 +90,12 @@ const HeaderSidebarMenu = ({ isSidebarOpen, removeClasses, addClasses }) => {
             </div>
           </div>
           <div className="widget newsletter">
-            <h4 className="title">Inscreva-se!</h4>
+            <h4 className="title">{t.newsletter}</h4>
             <form onSubmit={handleEmail}>
               <div className="input-group stylish-input-group">
                 <input
                   type="email"
-                  placeholder="Digite seu e-mail"
+                  placeholder={t.placeholder}
                   className="form-control"
                   name="email"
                   autoComplete="off"

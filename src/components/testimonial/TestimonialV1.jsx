@@ -1,6 +1,7 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
+import { Autoplay, Keyboard, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Keyboard, Autoplay, Pagination } from "swiper/modules";
+import { useLanguage } from "../../context/LanguageContext";
 import TestimonialV1Data from "../../jsonData/TestimonialV1Data.json";
 import SingleTestimonialV1 from "./SingleTestimonialV1";
 
@@ -15,6 +16,18 @@ const TestimonialV1 = () => {
     SlideRef.current.swiper.slidePrev();
   };
 
+  const { language } = useLanguage();
+  const testimonialText = {
+    pt: {
+      title: "O que nossos clientes dizem",
+    },
+    en: {
+      title: "What Our Clients Say",
+    },
+  };
+  const t = testimonialText[language] || testimonialText["pt"]; // Fallback to Portuguese if language not found
+  const p = TestimonialV1Data[language] || TestimonialV1Data["pt"]; // Fallback to Portuguese if language not found
+
   return (
     <>
       <div className="testimonial-style-two-area overflow-hidden bg-gradient text-light">
@@ -27,7 +40,7 @@ const TestimonialV1 = () => {
                 </div>
                 <img src="/img/shape/quote-big.png" alt="Image Not Found" />
                 <div className="site-heaidng">
-                  <h2 className="title">O que nossos clientes dizem</h2>
+                  <h2 className="title">{t.title}</h2>
                 </div>
                 <div className="testimonial-style-two-carousel swiper">
                   <div className="testimonial-v1-wrappers ">
@@ -51,7 +64,7 @@ const TestimonialV1 = () => {
                         enabled: true,
                       }}
                     >
-                      {TestimonialV1Data.map((testimonial) => (
+                      {p.map((testimonial) => (
                         <SwiperSlide key={testimonial.id}>
                           <SingleTestimonialV1 testimonial={testimonial} />
                         </SwiperSlide>
