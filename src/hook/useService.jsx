@@ -16,7 +16,7 @@ export const useService = (serviceId) => {
 export const useServiceProject = (projectId) => {
   const { language } = useLanguage();
   
-  // Encontra o serviço no idioma atual
+  // Encontra o projeto no idioma atual
   const service = ProjectV1Data[language]?.find(item => item.id === projectId);
   
   // Fallback para português se não encontrar no idioma atual

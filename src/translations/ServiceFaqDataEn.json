@@ -1,0 +1,104 @@
+{
+  "Software Architecture": [
+    {
+      "id": 1,
+      "title": "What are the stages of the IT architecture project?",
+      "text": "Our approach includes requirements analysis, solution design, technology selection, pilot implementation, and comprehensive documentation."
+    },
+    {
+      "id": 2,
+      "title": "How do you ensure the scalability of the architecture?",
+      "text": "We utilize modular architecture principles, load balancing, and growth forecasting to ensure your infrastructure grows with your business."
+    },
+    {
+      "id": 3,
+      "title": "What certifications does your team have?",
+      "text": "Our architects have AWS, Azure, TOGAF, and ITIL certifications, ensuring solutions aligned with market best practices."
+    }
+  ],
+  "IT Consulting": [
+    {
+      "id": 1,
+      "title": "What is the average duration of a consulting project?",
+      "text": "We vary from 2 weeks for quick diagnostics to 6 months for complete digital transformations, depending on complexity."
+    },
+    {
+      "id": 2,
+      "title": "How do you assess my company's digital maturity?",
+      "text": "We use international frameworks like COBIT and ITIL to evaluate processes, people, technology, and governance."
+    },
+    {
+      "id": 3,
+      "title": "Do you offer post-consulting support?",
+      "text": "Yes, we provide follow-up packages for 3-12 months to ensure the implementation of recommendations."
+    }
+  ],
+  "Digital Marketing Agency": [
+    {
+      "id": 1,
+      "title": "What digital channels do you recommend for my business?",
+      "text": "We analyze your target audience to recommend the ideal combination of SEO, paid media, social media, and email marketing."
+    },
+    {
+      "id": 2,
+      "title": "How do you measure the ROI of campaigns?",
+      "text": "We use analytics tools with multi-channel attribution and custom reports that show the return on investment."
+    },
+    {
+      "id": 3,
+      "title": "What is the timeline to see results?",
+      "text": "SEO takes 3-6 months, while paid campaigns show results in 30-60 days, depending on the budget."
+    }
+  ],
+  "IT Security and Investments": [
+    {
+      "id": 1,
+      "title": "What are the main risks you identify?",
+      "text": "We assess technical vulnerabilities, process failures, and human risks, prioritizing by potential business impact."
+    },
+    {
+      "id": 2,
+      "title": "How do you implement security policies?",
+      "text": "We develop custom standards, training, and continuous monitoring systems tailored to your operations."
+    },
+    {
+      "id": 3,
+      "title": "Do you meet LGPD requirements?",
+      "text": "Yes, our projects include data mapping, impact reports, and implementation of specific controls."
+    }
+  ],
+  "Digital Market Research": [
+    {
+      "id": 1,
+      "title": "What methodologies do you use?",
+      "text": "We combine quantitative research (surveys, analytics) with qualitative (interviews, focus groups) for comprehensive insights."
+    },
+    {
+      "id": 2,
+      "title": "How do you ensure data representativeness?",
+      "text": "We use statistical sampling techniques and cross-validation with secondary sources for greater reliability."
+    },
+    {
+      "id": 3,
+      "title": "Can I compare results over time?",
+      "text": "Yes, we create historical databases and comparative dashboards for temporal analysis of indicators."
+    }
+  ],
+  "Digital Reporting Analysis": [
+    {
+      "id": 1,
+      "title": "What analytics tools do you use?",
+      "text": "We work with Google Analytics, Power BI, Tableau, and custom solutions according to specific needs."
+    },
+    {
+      "id": 2,
+      "title": "How do you turn data into actionable insights?",
+      "text": "Our analysts identify patterns, create clear visualizations, and make strategic recommendations based on the numbers."
+    },
+    {
+      "id": 3,
+      "title": "How often do you update reports?",
+      "text": "We offer daily, weekly, or monthly updates, with alerts for events outside the expected norm."
+    }
+  ]
+}
