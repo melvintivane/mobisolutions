@@ -1,4 +1,3 @@
-import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
 
 const HeaderLogoV1 = ({ logoColor = false, openMenu }) => {
@@ -14,7 +13,7 @@ const HeaderLogoV1 = ({ logoColor = false, openMenu }) => {
         >
           <i className="fa-solid fa-bars"></i>
         </button>
-        <Link className="navbar-brand" to="/#">
+        <Link className="navbar-brand d-none d-md-block " to="/#">
           {logoColor ? (
             <img src="/img/logo/logo-light.png" className="logo" alt="Logo" />
           ) : (

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import { toast } from "react-toastify";
+import styled from "styled-components";
 import { useLanguage } from "../../context/LanguageContext";
 import HeaderSideBarMenu from "../../translations/HeaderSideBarMenu.json";
 import SocialShare2 from "../others/SocialShare2";
@@ -16,6 +17,19 @@ const HeaderSidebarMenu = ({ isSidebarOpen, removeClasses, addClasses }) => {
     event.target.reset();
     toast.success(t.toastSuccess);
   };
+  const Breakpoint = {
+    md: "768px", // Ajuste o valor conforme necessário
+  };
+
+  const StyledComponent = styled.div`
+    display: none;
+
+    @media (min-width: ${Breakpoint.md}) {
+      margin-top: 20px;
+      display: block;
+     
+    }
+  `;
 
   return (
     <>
@@ -29,7 +43,10 @@ const HeaderSidebarMenu = ({ isSidebarOpen, removeClasses, addClasses }) => {
                 ></i>
               </button>
             </li> */}
-            <LanguageToggle/>
+            <StyledComponent>
+              <LanguageToggle />
+            </StyledComponent>
+
             <li className="side-menu">
               <Link to={void 0} onClick={addClasses}>
                 <span className="bar-1"></span>
@@ -50,9 +67,7 @@ const HeaderSidebarMenu = ({ isSidebarOpen, removeClasses, addClasses }) => {
             </div>
           </div>
           <div className="widget">
-            <p>
-              {t.description}
-            </p>
+            <p>{t.description}</p>
           </div>
           <div className="widget address">
             <div>

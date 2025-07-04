@@ -12,8 +12,8 @@
         "description2": "A Fundação Samora Machel reconhece a importância de alcançar um público diversificado, incluindo aqueles que acessam informações por meio de dispositivos móveis. Para isso, o site foi projetado com uma abordagem responsiva, garantindo que todos os elementos se ajustem perfeitamente a diferentes tamanhos de tela. A experiência do usuário é otimizada, permitindo que os visitantes naveguem facilmente por seções como \"História\", \"Projetos\" e \"Eventos\", independentemente do dispositivo que utilizam.",
         "description3": "Para aumentar a visibilidade da Fundação Samora Machel e engajar mais pessoas em suas causas, implementamos soluções de automação de marketing. Isso inclui a integração de formulários de contato, newsletters e campanhas de email marketing, permitindo que a fundação se comunique de forma mais eficaz com seus apoiadores e a comunidade em geral.",
         "lastParagraph": "Essas ferramentas facilitam o acompanhamento de interações e o envio de atualizações sobre eventos, campanhas e resultados dos projetos. Com uma estratégia de marketing digital bem definida, a fundação pode ampliar seu alcance e promover suas iniciativas de maneira mais eficaz.\n\nAtravés deste projeto, conseguimos criar uma plataforma que não só informa, mas também inspira a ação e a participação da comunidade, alinhando-se à missão da Fundação Samora Machel de promover os direitos humanos e o desenvolvimento social em Moçambique..",
-        "boxImg1": "sm-1.JPG",
-        "boxImg2": "sm-2.JPG",
+        "boxImg1": "sm.png",
+        "boxImg2": "sm-2.png",
         "shape": "10.png"
     },
     {
@@ -29,14 +29,14 @@
         "description2": "A loja virtual foi equipada com um sistema de avaliações e comentários, permitindo que os clientes compartilhem suas experiências e opiniões sobre os produtos. Isso não só ajuda outros consumidores na tomada de decisão, mas também fornece feedback valioso para a equipe da ClickTechMoz. Além disso, implementamos um recurso de chat ao vivo para suporte imediato, garantindo que os usuários tenham ajuda em tempo real durante o processo de compra.",
         "description3": "Para promover a fidelização do cliente, criamos um programa de recompensas que incentiva compras repetidas. Os clientes podem acumular pontos a cada transação e trocá-los por descontos ou produtos gratuitos. Também desenvolvemos campanhas sazonais e promoções exclusivas que são facilmente gerenciadas através do painel de administração da loja, permitindo que a ClickTechMoz se adapte rapidamente às tendências do mercado.",
         "lastParagraph": "Com um design intuitivo e uma navegação simplificada, a ClickTechMoz se posiciona como uma referência no comércio eletrônico em Moçambique. O site não só oferece uma ampla variedade de produtos, mas também proporciona uma experiência de compra agradável e eficiente, alinhando-se ao compromisso da empresa de inovar e atender às necessidades dos consumidores. A loja virtual representa um passo significativo na modernização do varejo digital no país.",
-        "boxImg1": "clt-1.JPG",
-        "boxImg2": "clt-2.JPG",
+        "boxImg1": "clt-1.png",
+        "boxImg2": "clt-2.png",
         "shape": "10.png"
     },
     {
         "id": 5,
-        "thumb": "correio24System.JPG",
-        "thumbFull": "correio24System.JPG",
+        "thumb": "correio24System.png",
+        "thumbFull": "correio24System.png",
         "projectLink": "project-details",
         "subTitle": "Sistema de Correio",
         "title": "Correio 24",
@@ -46,8 +46,8 @@
         "description2": "O site foi projetado com uma interface amigável que permite aos usuários navegar facilmente entre as diversas opções de envio. Incorporamos um sistema de agendamento de coletas, onde os clientes podem escolher horários convenientes para a retirada de pacotes. Além disso, a plataforma oferece informações detalhadas sobre prazos de entrega e áreas atendidas, garantindo transparência no processo.",
         "description3": "Para otimizar a experiência do usuário, implementamos um sistema de notificação por email e SMS que mantém os clientes informados sobre o status de suas entregas. Além disso, desenvolvemos uma seção de FAQs para responder às dúvidas comuns, proporcionando suporte adicional sem a necessidade de contato direto. Esta abordagem visa aumentar a confiança dos usuários na plataforma.",
         "lastParagraph": "Com uma proposta de valor clara e um conjunto de serviços diferenciados, a Correio24Expresso se posiciona como uma solução eficiente para necessidades de logística em Moçambique. O site não apenas facilita o envio de pacotes, mas também constrói um relacionamento de confiança com os clientes, alinhando-se à missão da empresa de modernizar o setor de entrega no país.",
-        "boxImg1": "correio-1.JPG",
-        "boxImg2": "correio-2.JPG",
+        "boxImg1": "correio-1.png",
+        "boxImg2": "correio-2.png",
         "shape": "10.png"
     },
     {
@@ -56,7 +56,7 @@
         "thumbFull": "flogasSystem.png",
         "projectLink": "project-details",
         "subTitle": "Website Institucional",
-        "title": "Flogas Eletricidade e Mecânicas, Lda",
+        "title": "Flogas Eletricidade e Mecânica, Lda",
         "title2": "Site Responsivo e Navegação Intuitiva",
         "title3": "Foco na Apresentação dos Serviços",
         "description": "A Flogas Eletricidade e Mecânicas, Lda é uma empresa moçambicana que atua no ramo de serviços elétricos e mecânicos. Com experiência comprovada em instalação e manutenção de equipamentos industriais, a Flogas atende clientes de diferentes setores com foco em eficiência e qualidade.",
@@ -80,8 +80,8 @@
         "description2": "Os candidatos podem se inscrever em vagas de diversas áreas, incluindo Design, TI, Vendas, e muito mais. A EPMCS também oferece a possibilidade de carregar currículos e se candidatar a empregos com apenas alguns cliques. Com uma interface amigável, os usuários podem filtrar as vagas por categoria e país, tornando a busca mais eficiente.",
         "description3": "Além de conectar candidatos a empregadores, a EPMCS oferece recursos adicionais, como dicas para entrevistas e orientações sobre como elaborar um currículo eficaz. As empresas também podem se cadastrar para postar vagas e buscar candidatos qualificados, contribuindo para um ecossistema de recrutamento mais dinâmico.",
         "lastParagraph": "Com uma base crescente de vagas e candidatos, a EPMCS se destaca como uma solução confiável para aqueles que buscam oportunidades no mercado de trabalho. A plataforma é dedicada a ajudar as pessoas a encontrarem a carreira que merecem, promovendo uma conexão eficaz entre talento e oportunidade.",
-        "boxImg1": "ep-1.JPG",
-        "boxImg2": "ep-2.JPG",
+        "boxImg1": "ep-1.png",
+        "boxImg2": "ep-2.png",
         "shape": "10.png"
     },
     {
@@ -117,8 +117,8 @@
         "description2": "The Samora Machel Foundation recognizes the importance of reaching a diverse audience, including those who access information through mobile devices. To achieve this, the website was designed with a responsive approach, ensuring that all elements fit perfectly on different screen sizes. The user experience is optimized, allowing visitors to easily navigate through sections like \"History\", \"Projects\", and \"Events\", regardless of the device they are using.",
         "description3": "To increase the visibility of the Samora Machel Foundation and engage more people in its causes, we implemented marketing automation solutions. This includes integrating contact forms, newsletters, and email marketing campaigns, allowing the foundation to communicate more effectively with its supporters and the general community.",
         "lastParagraph": "These tools facilitate tracking interactions and sending updates about events, campaigns, and project results. With a well-defined digital marketing strategy, the foundation can expand its reach and promote its initiatives more effectively.\n\nThrough this project, we managed to create a platform that not only informs but also inspires action and community participation, aligning with the Samora Machel Foundation's mission to promote human rights and social development in Mozambique.",
-        "boxImg1": "sm-1.JPG",
-        "boxImg2": "sm-2.JPG",
+        "boxImg1": "sm.png",
+        "boxImg2": "sm-2.png",
         "shape": "10.png"
     },
     {
@@ -134,14 +134,14 @@
         "description2": "The online store was equipped with a review and comment system, allowing customers to share their experiences and opinions about the products. This not only helps other consumers in their decision-making but also provides valuable feedback for the ClickTechMoz team. Additionally, we implemented a live chat feature for immediate support, ensuring that users receive real-time assistance during the purchasing process.",
         "description3": "To promote customer loyalty, we created a rewards program that incentivizes repeat purchases. Customers can accumulate points with each transaction and redeem them for discounts or free products. We also developed seasonal campaigns and exclusive promotions that are easily managed through the store's admin panel, allowing ClickTechMoz to quickly adapt to market trends.",
         "lastParagraph": "With an intuitive design and simplified navigation, ClickTechMoz positions itself as a reference in e-commerce in Mozambique. The site not only offers a wide variety of products but also provides a pleasant and efficient shopping experience, aligning with the company's commitment to innovate and meet consumer needs. The online store represents a significant step in modernizing digital retail in the country.",
-        "boxImg1": "clt-1.JPG",
-        "boxImg2": "clt-2.JPG",
+        "boxImg1": "clt-1.png",
+        "boxImg2": "clt-2.png",
         "shape": "10.png"
     },
     {
         "id": 5,
-        "thumb": "correio24System.JPG",
-        "thumbFull": "correio24System.JPG",
+        "thumb": "correio24System.png",
+        "thumbFull": "correio24System.png",
         "projectLink": "project-details",
         "subTitle": "Mail System",
         "title": "Correio 24",
@@ -151,8 +151,8 @@
         "description2": "The site was designed with a user-friendly interface that allows users to easily navigate through various shipping options. We incorporated a pickup scheduling system where customers can choose convenient times for package collection. Additionally, the platform provides detailed information on delivery times and service areas, ensuring transparency in the process.",
         "description3": "To optimize the user experience, we implemented an email and SMS notification system that keeps customers informed about the status of their deliveries. We also developed a FAQs section to address common questions, providing additional support without the need for direct contact. This approach aims to increase user trust in the platform.",
         "lastParagraph": "With a clear value proposition and a set of differentiated services, Correio24Expresso positions itself as an efficient solution for logistics needs in Mozambique. The site not only facilitates package shipping but also builds a trusting relationship with customers, aligning with the company's mission to modernize the delivery sector in the country.",
-        "boxImg1": "correio-1.JPG",
-        "boxImg2": "correio-2.JPG",
+        "boxImg1": "correio-1.png",
+        "boxImg2": "correio-2.png",
         "shape": "10.png"
     },
     {
@@ -185,8 +185,8 @@
         "description2": "Candidates can apply for jobs in diverse fields, including Design, IT, Sales, and more. EPMCS also offers the ability to upload resumes and apply for jobs with just a few clicks. With a user-friendly interface, users can filter job openings by category and country, making the search more efficient.",
         "description3": "In addition to connecting candidates with employers, EPMCS provides additional resources such as interview tips and guidance on how to create an effective resume. Companies can also register to post job openings and search for qualified candidates, contributing to a more dynamic recruitment ecosystem.",
         "lastParagraph": "With a growing database of job openings and candidates, EPMCS stands out as a reliable solution for those seeking opportunities in the job market. The platform is dedicated to helping people find the careers they deserve, promoting an effective connection between talent and opportunity.",
-        "boxImg1": "ep-1.JPG",
-        "boxImg2": "ep-2.JPG",
+        "boxImg1": "ep-1.png",
+        "boxImg2": "ep-2.png",
         "shape": "10.png"
     },
     {

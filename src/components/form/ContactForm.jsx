@@ -1,4 +1,6 @@
+import { useState } from "react";
 import { toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 import { useLanguage } from "../../context/LanguageContext";
 
 
@@ -15,7 +17,10 @@ const ContactForm = () => {
       phonePlaceholder: "Telefone",
       commentsPlaceholder: "Fale-nos sobre o projeto *",
       submitButton: "Entre em Contacto",
-      toastMessage: "Obrigado pela sua mensagem!",
+      toastSucessMessage: "Obrigado pela sua mensagem!",
+      toastFailureMessage: "Erro ao enviar a mensagem. Por favor, tente novamente.",
+      loaderMessage : "Enviando mensagem...",
+      
     },
     en: {
       question: "Have Questions?",
@@ -25,23 +30,82 @@ const ContactForm = () => {
       phonePlaceholder: "Phone",
       commentsPlaceholder: "Tell us about the project *",
       submitButton: "Get in Touch",
-      toastMessage: "Thank you for your message!",
+      toastSucessMessage: "Thank you for your message!",
+      toastFailureMessage: "Error sending message. Please try again.",
+      loaderMessage: "Sending message...",
     },
   };
   const t = contactText[language] || contactText["pt"]; // Fallback to Portuguese if language not found
 
-  const handleForm = (event) => {
-    event.preventDefault();
-    event.target.reset();
-   toast.success(`${t.toastMessage}`);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: '',
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
   };
-  
+
+   const handleFormSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    // Show loading toast
+    const toastId = toast.loading(`${t.loaderMessage}`, {
+      position: 'top-right',
+      autoClose: false, // Keep open until manually closed
+    });
+
+    try {
+      const response = await fetch('http://localhost:5000/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok || !data.success) {
+        throw new Error(data.message || `${t.toastFailureMessage}`);
+      }
+
+      // Success: Update toast
+      toast.update(toastId, {
+        render: ` ${t.toastSucessMessage}🎉`,
+        type: 'success',
+        isLoading: false,
+        autoClose: 3000,
+      });
+
+      // Reset form
+      setFormData({ name: '', email: '', phone: '', message: '' });
+    } catch (error) {
+      // Error: Update toast
+      toast.update(toastId, {
+        render: error.message || `${t.toastFailureMessage}`,
+        type: 'error',
+        isLoading: false,
+        autoClose: 3000,
+      });
+      console.error('Error:', error);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
   return (
     <>
       <div className="contact-form-style-one">
         <h4 className="sub-title">{t.question}</h4>
         <h2 className="title">{t.title}</h2>
-        <form className="contact-form contact-form" onSubmit={handleForm}>
+        <form className="contact-form contact-form" onSubmit={handleFormSubmit}>
           <div className="row">
             <div className="col-lg-12">
               <div className="form-group">
@@ -52,6 +116,8 @@ const ContactForm = () => {
                   placeholder={t.namePlaceholder}
                   type="text"
                   autoComplete="off"
+                  value={formData.name}
+                  onChange={handleChange}
                   required
                 />
                 <span className="alert-error"></span>
@@ -65,9 +131,11 @@ const ContactForm = () => {
                   className="form-control"
                   id="email"
                   name="email"
+                  value={formData.email}
                   placeholder={t.emailPlaceholder}
                   type="email"
                   autoComplete="off"
+                  onChange={handleChange}
                   required
                 />
                 <span className="alert-error"></span>
@@ -82,6 +150,8 @@ const ContactForm = () => {
                   placeholder={t.phonePlaceholder}
                   type="number"
                   autoComplete="off"
+                   value={formData.phone}
+                  onChange={handleChange}
                   required
                 />
                 <span className="alert-error"></span>
@@ -93,10 +163,12 @@ const ContactForm = () => {
               <div className="form-group comments">
                 <textarea
                   className="form-control"
-                  id="comments"
-                  name="comments"
+                  id="message"
+                  name="message"
                   placeholder={t.commentsPlaceholder}
                   autoComplete="off"
+                  onChange={handleChange}
+                  value={formData.message}
                   required
                 ></textarea>
               </div>
@@ -104,8 +176,9 @@ const ContactForm = () => {
           </div>
           <div className="row">
             <div className="col-lg-12">
-              <button type="submit" name="submit" id="submit">
+              <button disabled={isSubmitting} type="submit" name="submit" id="submit">
               <i className="fa fa-paper-plane"></i> {t.submitButton}
+               {isSubmitting ? 'Sending...' : ''}
               </button>
             </div>
           </div>
