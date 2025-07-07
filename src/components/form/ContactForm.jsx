@@ -177,8 +177,8 @@ const ContactForm = () => {
           <div className="row">
             <div className="col-lg-12">
               <button disabled={isSubmitting} type="submit" name="submit" id="submit">
-              <i className="fa fa-paper-plane"></i> {t.submitButton}
-               {isSubmitting ? 'Sending...' : ''}
+              <i className="fa fa-paper-plane"></i> 
+               {isSubmitting ?   t.loaderMessage : t.submitButton}
               </button>
             </div>
           </div>
