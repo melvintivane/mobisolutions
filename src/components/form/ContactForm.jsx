@@ -1,16 +1,13 @@
 import { useState } from "react";
 import { toast } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
+import "react-toastify/dist/ReactToastify.css";
 import { useLanguage } from "../../context/LanguageContext";
 
-
 const ContactForm = () => {
-  
-
   const { language } = useLanguage();
   const contactText = {
     pt: {
-      question : "Tem Dúvidas?",
+      question: "Tem Dúvidas?",
       title: "Envie-nos uma Mensagem",
       namePlaceholder: "Nome*",
       emailPlaceholder: "Email*",
@@ -18,9 +15,9 @@ const ContactForm = () => {
       commentsPlaceholder: "Fale-nos sobre o projeto *",
       submitButton: "Entre em Contacto",
       toastSucessMessage: "Obrigado pela sua mensagem!",
-      toastFailureMessage: "Erro ao enviar a mensagem. Por favor, tente novamente.",
-      loaderMessage : "Enviando mensagem...",
-      
+      toastFailureMessage:
+        "Erro ao enviar a mensagem. Por favor, tente novamente.",
+      loaderMessage: "Enviando mensagem...",
     },
     en: {
       question: "Have Questions?",
@@ -38,10 +35,10 @@ const ContactForm = () => {
   const t = contactText[language] || contactText["pt"]; // Fallback to Portuguese if language not found
 
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: '',
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const handleChange = (e) => {
@@ -52,18 +49,17 @@ const ContactForm = () => {
     }));
   };
 
-   const handleFormSubmit = async (e) => {
+  const handleFormSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
 
     // Show loading toast
-  
 
     try {
-      const response = await fetch('http://localhost:5000/api/send-email', {
-        method: 'POST',
+      const response = await fetch("http://localhost:5000/api/send-email", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       });
@@ -76,29 +72,39 @@ const ContactForm = () => {
 
       // Success: Update toast
       toast.success(t.toastSucessMessage, {
-        position: 'top-right',
+        position: "top-right",
         autoClose: 3000,
-        type: 'success',
+        type: "success",
         isLoading: false,
-        className: 'Toastify__toast--default', // Optional: if you want additional styling
-        progressClassName: 'Toastify__progress-bar--default',
-        icon: ({theme, type}) => 
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="var(--color-primary)">
-          <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-        </svg>
+        className: "Toastify__toast--default", // Optional: if you want additional styling
+        progressClassName: "Toastify__progress-bar--default",
+        icon: ({ theme, type }) => (
+          <svg viewBox="0 0 512 512" width="20" height="20">
+            {/* Círculo azul - usando sua variável CSS */}
+            <path
+              fill="var(--color-primary)"
+              d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"
+            />
+            {/* Checkmark branco */}
+            <path
+              fill="white"
+              d="M369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"
+            />
+          </svg>
+        ),
       });
 
       // Reset form
-      setFormData({ name: '', email: '', phone: '', message: '' });
+      setFormData({ name: "", email: "", phone: "", message: "" });
     } catch (error) {
       // Error: Update toast
       toast.error(error.message || t.toastFailureMessage, {
-        position: 'top-right',
+        position: "top-right",
         autoClose: 3000,
-        type: 'error',
+        type: "error",
         isLoading: false,
       });
-      console.error('Error:', error);
+      console.error("Error:", error);
     } finally {
       setIsSubmitting(false);
     }
@@ -153,7 +159,7 @@ const ContactForm = () => {
                   placeholder={t.phonePlaceholder}
                   type="number"
                   autoComplete="off"
-                   value={formData.phone}
+                  value={formData.phone}
                   onChange={handleChange}
                   required
                 />
@@ -179,9 +185,14 @@ const ContactForm = () => {
           </div>
           <div className="row">
             <div className="col-lg-12">
-              <button disabled={isSubmitting} type="submit" name="submit" id="submit">
-              <i className="fa fa-paper-plane"></i> 
-               {isSubmitting ?   t.loaderMessage : t.submitButton}
+              <button
+                disabled={isSubmitting}
+                type="submit"
+                name="submit"
+                id="submit"
+              >
+                <i className="fa fa-paper-plane"></i>
+                {isSubmitting ? t.loaderMessage : t.submitButton}
               </button>
             </div>
           </div>
