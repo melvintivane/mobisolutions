@@ -387,6 +387,23 @@ p {
 	font-family: var(--font-default);
 }
 
+/* Toast personalizado com tema azul */
+.Toastify__toast--success {
+  background: white !important;
+  color: var(--dark) !important;
+}
+
+.Toastify__toast--success .Toastify__toast-icon svg {
+  fill: var(--color-primary) !important;
+}
+
+.Toastify__progress-bar--success {
+  background: var(--color-primary) !important;
+}
+
+
+
+
 
 /* ============================================================== 
     # Helper CSS

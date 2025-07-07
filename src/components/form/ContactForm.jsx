@@ -57,10 +57,7 @@ const ContactForm = () => {
     setIsSubmitting(true);
 
     // Show loading toast
-    const toastId = toast.loading(`${t.loaderMessage}`, {
-      position: 'top-right',
-      autoClose: false, // Keep open until manually closed
-    });
+  
 
     try {
       const response = await fetch('http://localhost:5000/api/send-email', {
@@ -74,26 +71,32 @@ const ContactForm = () => {
       const data = await response.json();
 
       if (!response.ok || !data.success) {
-        throw new Error(data.message || `${t.toastFailureMessage}`);
+        throw new Error(data.message);
       }
 
       // Success: Update toast
-      toast.update(toastId, {
-        render: ` ${t.toastSucessMessage}🎉`,
+      toast.success(t.toastSucessMessage, {
+        position: 'top-right',
+        autoClose: 3000,
         type: 'success',
         isLoading: false,
-        autoClose: 3000,
+        className: 'Toastify__toast--default', // Optional: if you want additional styling
+        progressClassName: 'Toastify__progress-bar--default',
+        icon: ({theme, type}) => 
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="var(--color-primary)">
+          <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+        </svg>
       });
 
       // Reset form
       setFormData({ name: '', email: '', phone: '', message: '' });
     } catch (error) {
       // Error: Update toast
-      toast.update(toastId, {
-        render: error.message || `${t.toastFailureMessage}`,
+      toast.error(error.message || t.toastFailureMessage, {
+        position: 'top-right',
+        autoClose: 3000,
         type: 'error',
         isLoading: false,
-        autoClose: 3000,
       });
       console.error('Error:', error);
     } finally {
