@@ -1,0 +1,22 @@
+{
+    "pt": {
+      "toastMessage": "Obrigado pelo seu e-mail!",
+      "description": "Desenvolvimento de software é o componente essencial da transformação digital que utiliza a Internet e tecnologias avançadas, como computadores, dispositivos móveis e diversas plataformas digitais, para criar soluções inovadoras que atendem às necessidades de empresas e usuários. Uma empresa de desenvolvimento de software projeta, implementa e mantém sistemas, aplicativos e plataformas que otimizam processos, impulsionam a produtividade e promovem a inovação nos mais diversos setores.",
+      "address": "Endereço",
+      "addressValue": "Av. Industrias, n° 3787, Liberdade",
+      "email": "contact@mymobisolutions.com",
+      "contact": "+258 84 039 6163",
+      "newsletter": "Inscreva-se!",
+      "placeholder": "Digite seu e-mail"
+    },
+    "en": {
+      "toastMessage": "Thank you for your email!",
+      "description": "Software development is the essential component of digital transformation that uses the Internet and advanced technologies, such as computers, mobile devices and various digital platforms, to create innovative solutions that meet the needs of businesses and users. A software development company designs, implements and maintains systems, applications and platforms that optimize processes, boost productivity and promote innovation in various sectors.",
+      "address": "Address",
+      "addressValue": "Av. Industrias, n° 3787, Liberdade",
+      "email": "contact@mymobisolutions.com",
+      "contact": "+258 84 039 6163",
+      "newsletter": "Subscribe!",
+      "placeholder": "Enter your email"
+    }
+}

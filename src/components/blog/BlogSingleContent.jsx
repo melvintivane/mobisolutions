@@ -1,26 +1,42 @@
-import BlogForm from "./BlogForm";
-import Animate from "../animation/Animate";
 import { Link } from "react-router-dom";
-import handleSmoothScroll from "../utilities/handleSmoothScroll";
-import SingleBlogComment from "./SingleBlogComment";
-import BlogCommentData from "../../jsonData/BlogCommentData.json";
-import BlogV1Data from "../../jsonData/BlogV1Data.json";
-import team9 from "/img/team/9.jpg";
+import Animate from "../animation/Animate";
 import SocialShare2 from "../others/SocialShare2";
+import handleSmoothScroll from "../utilities/handleSmoothScroll";
 
-const BlogSingleContent = ({ blogInfo, totalBlogs }) => {
-  const { id, thumbFull, midTitle, title } = blogInfo || {};
+const BlogSingleContent = ({ blogInfo, allPosts = [] }) => {
+  const {
+    _id,
+    blogTitle,
+    authorName,
+    date,
+    mainText,
+    quoteText,
+    thumb,
+    authorProfileImg,
+    authorResume,
+  } = blogInfo || {};
 
-  // Blogs Navigation
-  const currentId = id ? parseInt(id.toString(), 10) : 1;
 
-  // Calculate the previous and next IDs dynamically
-  const previousId = currentId === 1 ? totalBlogs : currentId - 1;
-  const nextId = currentId === totalBlogs ? 1 : currentId + 1;
+  // Formatação da data
+ const formatDate = (date) => {
+  const options = {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+  };
 
-  // Get the previous and next project titles
-  const previousBlog = BlogV1Data.find((blog) => blog.id === previousId);
-  const nextBlog = BlogV1Data.find((blog) => blog.id === nextId);
+  return new Intl.DateTimeFormat('pt-BR', options).format(date);
+};
+
+// Uso da formatação de data
+const dateFormatted = new Date(date);
+const formattedDate = formatDate(dateFormatted);
+
+  // Navegação entre posts usando allPosts
+  const currentIndex = allPosts.findIndex((post) => post._id === _id);
+  const previousPost = currentIndex > 0 ? allPosts[currentIndex - 1] : null;
+  const nextPost =
+    currentIndex < allPosts.length - 1 ? allPosts[currentIndex + 1] : null;
 
   // Get the first two words of the project title
   const getFirstTwoWords = (text) =>
@@ -38,53 +54,25 @@ const BlogSingleContent = ({ blogInfo, totalBlogs }) => {
                   <div className="blog-style-one item">
                     <div className="blog-item-box">
                       <div className="thumb">
-                        <img src={`/img/blog/${thumbFull}`} alt="Thumb" />
+                        <img src={`http://localhost:5000${thumb}`} alt="Thumb" />
                       </div>
                       <div className="info">
                         <div className="meta">
                           <ul>
                             <li>
                               <i className="fa-solid fa-user"></i>{" "}
-                              <Link to="#">Md Sohag</Link>
+                              <Link to="#">{authorName}</Link>
                             </li>
                             <li>
-                              <i className="fa-solid fa-calendar-alt"></i> 25 de
-                              Abril, 2024
+                              <i className="fa-solid fa-calendar-alt"></i>{" "}
+                              {formattedDate}
                             </li>
                           </ul>
                         </div>
-                        <p>
-                          Dê à dama o que eles acham que ela merece. Expus
-                          claramente minha formação. Vulgar como corações no
-                          sótão. Percebeu a partida explicada sem que ele
-                          perdesse algo. Contrastando diferenças, você encontra
-                          alegria razoavelmente. Novamente permanece sem
-                          sentido. Para continuar existindo ao norte, como
-                          filhas protegidas com dificuldade. Continuou com
-                          entusiasmo necessário até o café da manhã. Cercada,
-                          senhorita imóvel, ela finalizou a leitura. Direção
-                          alegre negligenciada, mas ainda assim apoiada por ela.
-                        </p>
-                        <p>
-                          Novidades aconteceram deixando todos desconfortáveis.
-                          Desenhos podem ser seguidos, melhorados, mas não
-                          sociáveis. Fingiu de imediato com seriedade. Veja
-                          alguns relatos agradáveis de forma cortês. Excelência
-                          projetada é enviada de Devonshire, notavelmente ao
-                          estimar. O lado da vida no passado. Continuar se
-                          expressando era horrível para o ambiente doméstico.
-                          Ver ela o fez não valorizar os homens, desculpando-se
-                          com sua genialidade. Negociações sobre sua idade.
-                          Comparações com o novo filho melancólico de Hampshire.
-                        </p>
-                        <blockquote>
-                          Celebrou-se a partilha do início para o pior.
-                          Casamentos e quaisquer opiniões apropriadas, mesmo que
-                          pequenas. Casas ou meses resolveram afastar as
-                          senhoras. Envolvido em sofrimento, supunha-se que ele
-                          recomendava com entusiasmo.
-                        </blockquote>
-                        <p>
+                        <p>{mainText}</p>
+
+                        <blockquote>{quoteText}</blockquote>
+                        {/*<p>
                           Desenhos podem ser seguidos, melhorados, mas não
                           sociáveis. Fingiu de imediato com seriedade. Veja
                           alguns relatos agradáveis de forma cortês. Excelência
@@ -120,7 +108,7 @@ const BlogSingleContent = ({ blogInfo, totalBlogs }) => {
                           dolore repellat, omnis quam? Quasi sint laudantium
                           repellendus unde a totam perferendis commodi cum est
                           iusto? Minima, laborum.
-                        </p>
+                        </p>*/}
                       </div>
                     </div>
                   </div>
@@ -128,21 +116,15 @@ const BlogSingleContent = ({ blogInfo, totalBlogs }) => {
                   {/* <BlogPostAuthor /> */}
                   <div className="post-author">
                     <div className="thumb">
-                      <img src={team9} alt="Thumb" />
+                      <img src={`http://localhost:5000${authorProfileImg}`} alt="Thumb" />
                     </div>
                     <div className="info">
                       <h4>
                         <Link to="#" onClick={handleSmoothScroll}>
-                          Md Sohag
+                          {authorName}
                         </Link>
                       </h4>
-                      <p>
-                        Grursus mal suada faci lisis Lorem ipsum dolarorit more
-                        ametion consectetur elit. Vesti at bulum nec at odio aea
-                        the dumm ipsumm ipsum that dolocons rsus mal suada and
-                        fadolorit to the consectetur elit. Todos os geradores de
-                        Lorem Ipsum na Internet tendem a repetir.
-                      </p>
+                      <p>{authorResume}</p>
                     </div>
                   </div>
                   {/* <BlogTagsShare /> */}
@@ -164,35 +146,39 @@ const BlogSingleContent = ({ blogInfo, totalBlogs }) => {
                     </div>
                   </div>
 
-                  {/* Post Pagination */}
+                  {/* Post Pagination - Versão Corrigida */}
                   <div className="post-pagi-area">
-                    <div className="post-previous">
-                      <Link to={`/blog/${previousId}`}>
-                        <div className="icon">
-                          <i className="fa-solid fa-angle-double-left"></i>
-                        </div>
-                        <div className="nav-title">
-                          {" "}
-                          Postagem Anterior{" "}
-                          <h5>{getFirstTwoWords(previousBlog?.title)}</h5>
-                        </div>
-                      </Link>
-                    </div>
-                    <div className="post-next">
-                      <Link to={`/blog/${nextId}`}>
-                        <div className="nav-title">
-                          Próxima Postagem{" "}
-                          <h5>{getFirstTwoWords(nextBlog?.title)}</h5>
-                        </div>
-                        <div className="icon">
-                          <i className="fa-solid fa-angle-double-right"></i>
-                        </div>
-                      </Link>
-                    </div>
+                    {previousPost && (
+                      <div className="post-previous">
+                        <Link to={`/blog/${previousPost._id}`}>
+                          <div className="icon">
+                            <i className="fa-solid fa-angle-double-left"></i>
+                          </div>
+                          <div className="nav-title">
+                            Postagem Anterior
+                            <h5>{getFirstTwoWords(previousPost.blogTitle)}</h5>
+                          </div>
+                        </Link>
+                      </div>
+                    )}
+
+                    {nextPost && (
+                      <div className="post-next">
+                        <Link to={`/blog/${nextPost._id}`}>
+                          <div className="nav-title">
+                            Próxima Postagem
+                            <h5>{getFirstTwoWords(nextPost.blogTitle)}</h5>
+                          </div>
+                          <div className="icon">
+                            <i className="fa-solid fa-angle-double-right"></i>
+                          </div>
+                        </Link>
+                      </div>
+                    )}
                   </div>
 
                   {/* blog-comments */}
-                  <div className="blog-comments">
+                  {/*<div className="blog-comments">
                     <div className="comments-area">
                       <div className="comments-title">
                         <h3>{`3 Comments On “${title}”`}</h3>
@@ -207,7 +193,7 @@ const BlogSingleContent = ({ blogInfo, totalBlogs }) => {
                       </div>
                       <BlogForm />
                     </div>
-                  </div>
+                  </div>*/}
                 </div>
               </Animate>
             </div>

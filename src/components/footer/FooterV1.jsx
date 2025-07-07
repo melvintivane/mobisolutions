@@ -1,7 +1,8 @@
-import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
-import SocialShare from "../others/SocialShare";
 import { toast } from "react-toastify";
+import { useLanguage } from "../../context/LanguageContext";
+import FooterTranslation from "../../translations/Footer.json";
+import SocialShare from "../others/SocialShare";
 
 const FooterV1 = () => {
   const handleSearch = (event) => {
@@ -9,6 +10,9 @@ const FooterV1 = () => {
     event.target.reset();
     toast.success("Obrigado pelo seu e-mail!");
   };
+
+  const { language } = useLanguage();
+  const t = FooterTranslation[language] || FooterTranslation["pt"]; // Fallback to Portuguese if language not found
 
   return (
     <>
@@ -30,10 +34,7 @@ const FooterV1 = () => {
                     alt="MyMobiSolutions"
                   />
                   <p>
-                    Estamos prontos para enfrentar os desafios tecnológicos e
-                    transformar ideias em soluções eficazes. Nosso compromisso é
-                    levar seu projeto de software ao próximo nível, superando
-                    qualquer limitação e garantindo o sucesso.
+                    {t.text}
                   </p>
                   <div className="footer-social mt-30">
                     <ul>
@@ -45,22 +46,22 @@ const FooterV1 = () => {
 
               <div className="col-lg-3 col-md-6 mt-50 footer-item pl-50 pl-md-15 pl-xs-15">
                 <div className="f-item link">
-                  <h4 className="widget-title">Empresa</h4>
+                  <h4 className="widget-title">{t.subTitle}</h4>
                   <ul>
                     <li>
-                      <Link to="/about-us#">Perfil da Empresa</Link>
+                      <Link to="/about-us#">{t.item1}</Link>
                     </li>
                     <li>
-                      <Link to="/about-us#">Sobre</Link>
+                      <Link to="/about-us#">{t.item2}</Link>
                     </li>
                     <li>
-                      <Link to="/faq#">Central de Ajuda</Link>
+                      <Link to="/faq#">{t.item3}</Link>
                     </li>
                     <li>
-                      <Link to="/contact-us#">Carreiras</Link>
+                      <Link to="/contact-us#">{t.item4}</Link>
                     </li>
                     <li>
-                      <Link to="/contact-us#">Contacto</Link>
+                      <Link to="/contact-us#">{t.item5}</Link>
                     </li>
                   </ul>
                 </div>
@@ -68,26 +69,26 @@ const FooterV1 = () => {
 
               <div className="col-lg-3 col-md-6 footer-item mt-50">
                 <div className="f-item contact">
-                  <h4 className="widget-title">Informações de Contacto</h4>
+                  <h4 className="widget-title">{t.addressTitle}</h4>
                   <ul>
                     <li>
                       <div className="content">
-                        <strong>Endereço:</strong>
-                        Av. Industrias, n° 3787, Liberdade
+                        <strong>{t.addressSubtitle}</strong>
+                        {t.address}
                       </div>
                     </li>
                     <li>
                       <div className="content">
-                        <strong>Email:</strong>
+                        <strong>{t.emailSubtitle}</strong>
                         <a href="mailto:contact@mymobisolutions.com">
-                          contact@mymobisolutions.com
+                          {t.email}
                         </a>
                       </div>
                     </li>
                     <li>
                       <div className="content">
-                        <strong>Telefone:</strong>
-                        <a href="tel:2151234567">+258 84 039 6163</a>
+                        <strong>{t.phoneSubtitle}</strong>
+                        <a href="tel:2151234567">{t.phone}</a>
                       </div>
                     </li>
                   </ul>
@@ -96,15 +97,14 @@ const FooterV1 = () => {
 
               <div className="col-lg-3 col-md-6 footer-item mt-50">
                 <div className="f-item newsletter">
-                  <h4 className="widget-title">Newsletter</h4>
+                  <h4 className="widget-title">{t.newsletterTitle}</h4>
                   <p>
-                    Junte-se à nossa lista de assinantes para receber as últimas
-                    notícias e ofertas especiais instantaneamente.
+                    {t.newsletter}
                   </p>
                   <form onSubmit={handleSearch}>
                     <input
                       type="email"
-                      placeholder="Seu Email"
+                      placeholder={t.emailPlaceholder}
                       className="form-control"
                       name="email"
                       autoComplete="off"
@@ -125,8 +125,7 @@ const FooterV1 = () => {
             <div className="row">
               <div className="col-lg-12">
                 <p>
-                  Copyright &copy; {new Date().getFullYear()} MyMobiSolutions. Todos
-                  os Direitos Reservados.
+                  Copyright &copy; {new Date().getFullYear()} MyMobiSolutions. {t.copyright}
                 </p>
               </div>
             </div>

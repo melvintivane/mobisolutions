@@ -1,4 +1,5 @@
-[
+{
+  "pt" :[
   {
     "id": 1,
     "icon": "flaticon-cyber-security",
@@ -23,4 +24,33 @@
     "number": "04",
     "title": "Suporte e Manutenção"
   }
-]
+],
+  "en": [
+    {
+      "id": 1,
+      "icon": "flaticon-cyber-security",
+      "number": "01",
+      "title": "Information Security"
+    },
+    {
+      "id": 2,
+      "icon": "flaticon-paper",
+      "number": "02",
+      "title": "Technical Documentation"
+    },
+    {
+      "id": 3,
+      "icon": "flaticon-start-up",
+      "number": "03",
+      "title": "Agile Development"
+    },
+    {
+      "id": 4,
+      "icon": "flaticon-support-1",
+      "number": "04",
+      "title": "Support and Maintenance"
+    }
+  ]
+
+}
+

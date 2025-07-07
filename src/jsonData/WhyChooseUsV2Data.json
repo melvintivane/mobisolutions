@@ -1,4 +1,5 @@
-[
+{
+  "pt":[
   {
     "id": 1,
     "title": "Agência Profissional",
@@ -9,4 +10,17 @@
     "title": "Provedor de Soluções",
     "text": "Oferecemos soluções digitais avançadas, com expertise em desenvolvimento de software e integração de sistemas, para otimizar processos empresariais."
   }
-]
+],
+  "en":[
+  {
+    "id": 1,
+    "title": "Professional Agency",
+    "text": "We develop custom software solutions tailored to each client's specific needs, focusing on excellence and innovation."
+  },
+  {
+    "id": 2,
+    "title": "Solution Provider",
+    "text": "We offer advanced digital solutions, with expertise in software development and system integration, to optimize business processes."
+  }
+  ]
+}

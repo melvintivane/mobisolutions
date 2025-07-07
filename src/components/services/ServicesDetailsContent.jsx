@@ -1,15 +1,46 @@
-import React from "react";
+import { useParams } from "react-router-dom";
+import { useLanguage } from "../../context/LanguageContext";
+import { useService } from "../../hook/useService";
+import ServiceFaqV1 from "../faq/ServiceFaqV1";
+import BoucherWidget from "../widgets/BoucherWidget";
 import ServiceListWidget from "../widgets/ServiceListWidget";
 import SupportWidget from "../widgets/SupportWidget";
-import BoucherWidget from "../widgets/BoucherWidget";
-import FeatureListData from "../../jsonData/FeatureListData.json";
-import PopularServiceData from "../../jsonData/PopularServiceData.json";
-import SinglePopularService from "./SinglePopularService";
-import ServiceFaqV1 from "../faq/ServiceFaqV1";
 
-const ServicesDetailsContent = ({ serviceInfo }) => {
-  const { thumb, text, title } = serviceInfo;
+const ServicesDetailsContent = () => {
+  const { id } = useParams(); // Pega o ID da URL
+  const serviceInfo = useService(Number(id)); // Converte para número e busca o serviço
 
+  const { thumb, text, title, includedServices = [], challenge, whatWeDo } =
+    serviceInfo;
+  const createSlug = (title) => {
+    return title
+      .toLowerCase()
+      .normalize("NFD") // Normaliza caracteres acentuados
+      .replace(/[\u0300-\u036f]/g, "") // Remove acentos
+      .replace(/[^\w\s-]/g, "") // Remove caracteres especiais
+      .replace(/\s+/g, "-") // Substitui espaços por hífens
+      .replace(/-+/g, "-") // Remove hífens duplicados
+      .trim();
+  };
+
+  const slug = createSlug(serviceInfo.title);
+
+  const {language} = useLanguage();
+  const textData = {
+    pt:{
+      title1 : "Serviços Incluídos",
+      title2 : "O Desafio",
+      title3 : "O que fazemos?",
+      title4 : "Questões acerca do serviço"
+    },
+    en:{
+       title1: "Included Services",
+       title2: "The Challenge",
+       title3: "What We Do?",
+       title4 : "Questions about the service"
+    }
+  };
+  const t = textData[language] || textData['pt']
   return (
     <>
       <div className="services-details-area default-padding">
@@ -26,51 +57,31 @@ const ServicesDetailsContent = ({ serviceInfo }) => {
                   <div className="row">
                     <div className="col-lg-5 col-md-6">
                       <div className="content">
-                        <h3>Serviços Incluídos</h3>
+                        <h3>{t.title1}</h3>
                         <ul className="feature-list-item">
-                          {FeatureListData.map((list) => (
-                            <li key={list.id}>{list.featureList}</li>
-                          ))}
+                          {Array.isArray(includedServices) &&
+                            includedServices.map((item, index) => (
+                              <li key={index}>{item}</li>
+                            ))}
                         </ul>
                       </div>
                     </div>
                     <div className="col-lg-7 col-md-6 mt-xs-30">
                       <div className="content">
-                        <h3>O Desafio</h3>
-                        <p>
-                          Temporibus autem quibusdam et aut officiis debitis aut
-                          rerum necessitatibus saepe eveniet ut et voluptates
-                          repudiandae sint et molestiae non recusandae. Itaque
-                          earum rerum hic tenetur a sapiente delectus, ut aut
-                          reiciendis voluptatibus maiores alias. consequatur aut
-                          perferendis doloribus.
-                        </p>
+                        <h3>{t.title2}</h3>
+                        <p>{challenge}</p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <h3>O que fazemos?</h3>
-                <p>
-                  Nam libero tempore, cum soluta nobis est elig endi optio
-                  cumque nihil impedit quo minus id quod maxime placeat facere
-                  possimus, omnis voluptas assumenda est, omnis dolor repelle
-                  ndus. Temporibus autem quibusdam et aut officiis debitis aut
-                  rerum necessitatibus saepe eveniet ut et voluptates
-                  repudiandae sint et molestiae non recusandae. Itaque earum
-                  rerum hic tenetur a sapiente delectus, ut aut reiciendis
-                  voluptatibus maiores alias. consequatur aut perferendis
-                  doloribus asperiores repellat. The wise man therefore always
-                  holds in these matters to this principle of selection: he
-                  rejects pleasures to secure other greater pleasures, or else
-                  he endures pains to avoid worse pains. pleasures have to be
-                  repudiated and annoyances accepted.
-                </p>
+                <h3>{t.title3}</h3>
+                <p>{whatWeDo}</p>
 
                 <div className="faq-style-one service-faq mt-40">
-                  <h2 className="mb-30">Questões acerca do serviço</h2>
-                  <ServiceFaqV1 />
+                  <h2 className="mb-30">{t.title4}</h2>
+                  <ServiceFaqV1 serviceSlug={slug} />
                 </div>
-                <div className="services-more mt-40">
+                {/*<div className="services-more mt-40">
                   <h2>Serviços Populares</h2>
                   <div className="row">
                     {PopularServiceData.map((popular) => (
@@ -80,7 +91,7 @@ const ServicesDetailsContent = ({ serviceInfo }) => {
                       />
                     ))}
                   </div>
-                </div>
+                </div>*/}
               </div>
               <div className="col-xl-4 col-lg-5 mt-md-50 mt-xs-50 pl-30 pl-md-15 pl-xs-15 services-sidebar">
                 <ServiceListWidget />

@@ -1,7 +1,22 @@
-import React from "react";
+import { useLanguage } from "../../context/LanguageContext";
 import WhyChooseUsV2Data from "../../jsonData/WhyChooseUsV2Data.json";
 
 const WhyChooseUsV2 = () => {
+  const { language } = useLanguage();
+  const chooseText = {
+    pt: {
+      title: "Impulsione seu negócio",
+      text: "Temos experiência em soluções digitais para você",
+      time : "desde 2013" 
+    },
+    en: {
+      title: "Boost Your Business",
+      text: "We have experience in digital solutions for you",
+      time : "since 2013"
+    },
+  };
+  const t = chooseText[language] || chooseText["pt"]; // Fallback to Portuguese if language not found
+  const p = WhyChooseUsV2Data[language] || WhyChooseUsV2Data["pt"]; // Fallback to Portuguese if language not found
   return (
     <>
       <div className="choose-us-style-two-area default-padding bg-dark text-light">
@@ -9,9 +24,9 @@ const WhyChooseUsV2 = () => {
           <div className="row">
             <div className="col-xl-4">
               <div className="choose-us-style-two">
-                <h2 className="title mb-50">Impulsione seu negócio</h2>
+                <h2 className="title mb-50">{t.title}</h2>
                 <ul className="check-list-item">
-                  {WhyChooseUsV2Data.map((choose) => (
+                  {p.map((choose) => (
                     <li key={choose.id}>
                       <h4>{choose.title}</h4>
                       <p>{choose.text}</p>
@@ -37,8 +52,8 @@ const WhyChooseUsV2 = () => {
                     </text>
                   </svg>
                 </div> */}
-                <h4>Temos experiência em soluções digitais para você</h4>
-                <h2 className="text-path">desde 2013</h2>
+                <h4>{t.text}</h4>
+                <h2 className="text-path">{t.time}</h2>
                 <img
                   src="/img/about/male-data-scientist.jpg"
                   alt="Image Not Found"

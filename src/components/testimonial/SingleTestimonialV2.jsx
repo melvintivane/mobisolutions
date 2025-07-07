@@ -1,4 +1,3 @@
-import React from 'react';
 
 const SingleTestimonialV2 = ({ testimonial }) => {
     const { text, thumb, name, designation } = testimonial
@@ -12,9 +11,9 @@ const SingleTestimonialV2 = ({ testimonial }) => {
                             <p>{text}</p>
                         </div>
                         <div className="provider">
-                            <div className="thumb">
+                            {/* <div className="thumb">
                                 <img src={`/img/team/${thumb}`} alt="Thumb" />
-                            </div>
+                            </div>*/}
                             <div className="info">
                                 <h4>{name}</h4>
                                 <span>{designation}</span>

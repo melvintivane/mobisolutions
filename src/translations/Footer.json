@@ -1,0 +1,42 @@
+{
+    "pt": {
+        "text": "Estamos prontos para enfrentar os desafios tecnológicos e transformar ideias em soluções eficazes. Nosso compromisso é levar seu projeto de software ao próximo nível, superando qualquer limitação e garantindo o sucesso.",
+        "subTitle":"Empresa",
+        "item1" : "Perfil da Empresa",
+        "item2" : "Sobre",
+        "item3" : "Central de Ajuda",
+        "item4" : "Carreiras",
+        "item5" : "Contacto",
+        "addressTitle": "Informações de Contacto",
+        "adressSubtitle" : "Endereço :",
+        "address": "Av. Industrias, n° 3787, Liberdade",
+        "emailSubtitle": "Email :",
+        "email": "contact@mymobisolutions.com",
+        "phoneSubtitle": "Telefone :",
+        "phone": "+258 84 039 6163",
+        "newsletterTitle": "Newsletter",
+        "newsletter" : "Junte-se à nossa lista de assinantes para receber as últimas notícias e ofertas especiais instantaneamente.",
+        "copyright": "Todos os Direitos Reservados.",
+        "emailPlaceholder": "Seu Email"
+    },
+    "en": {
+        "text": "We are ready to tackle technological challenges and transform ideas into effective solutions. Our commitment is to take your software project to the next level, overcoming any limitations and ensuring success.",
+        "subTitle":"Company",
+        "item1" : "Company Profile",
+        "item2" : "About",
+        "item3" : "Help Center",
+        "item4" : "Careers",
+        "item5" : "Contact",
+        "addressTitle": "Contact Information",
+        "adressSubtitle" : "Address :",
+        "address": "Av. Industrias, n° 3787, Liberdade",
+        "emailSubtitle": "Email :",
+        "email": "contact@mymobisolutions.com",
+        "phoneSubtitle": "Phone :",
+        "phone": "+258 84 039 6163",
+        "newsletterTitle": "Newsletter",
+        "newsletter" : "Join our subscriber list to receive the latest news and special offers instantly.",
+        "copyright": "All Rights Reserved.",
+         "emailPlaceholder": "Your Email"
+    }
+}

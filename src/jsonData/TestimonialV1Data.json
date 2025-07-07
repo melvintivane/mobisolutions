@@ -1,4 +1,5 @@
-[
+{
+  "pt":[
   {
     "id": 1,
     "text": "A consultoria oferecida foi essencial para entender as necessidades técnicas do nosso sistema. As soluções sugeridas impactaram positivamente a eficiência e escalabilidade da nossa aplicação, resolvendo questões críticas no processo de desenvolvimento.",
@@ -17,4 +18,25 @@
     "name": "Metho K. Partho",
     "designation": "Desenvolvedor Sênior"
   }
-]
+],
+  "en":[
+  {
+    "id": 1,
+    "text": "The consultancy provided was essential to understand the technical needs of our system. The suggested solutions positively impacted the efficiency and scalability of our application, solving critical issues in the development process.",
+    "name": "Matthew J. Wyman",
+    "designation": "Senior Consultant"
+  },
+  {
+    "id": 2,
+    "text": "The team helped us transform our digital marketing strategy, providing valuable insights to improve the performance of our products in the market. Their technical expertise was crucial to achieving our goals.",
+    "name": "Anthom Bu Spar",
+    "designation": "Marketing Manager"
+  },
+  {
+    "id": 3,
+    "text": "The collaboration with the development team was exceptional. Together we implemented innovative solutions that increased the performance of our software and solved technical challenges that were previously complex to address.",
+    "name": "Metho K. Partho",
+    "designation": "Senior Developer"
+  }
+  ]
+}

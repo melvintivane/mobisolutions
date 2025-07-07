@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import { useRef, useState } from "react";
+import { Keyboard } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { useLanguage } from "../../context/LanguageContext";
 import ProjectV1Data from "../../jsonData/ProjectV1Data.json";
 import SingleProjectV1 from "./SingleProjectV1";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Keyboard } from "swiper/modules";
-import { useRef } from "react";
 
 const ProjectV1 = () => {
   const SlideRef = useRef();
@@ -23,6 +23,20 @@ const ProjectV1 = () => {
     setActiveSlide(index);
   };
 
+  const { language } = useLanguage();
+  const projectText = {
+    pt: {
+      subTitle: "Nossos Casos de Sucesso",
+      title: "Sistemas Entregues com Excelência",
+    },
+    en: {
+      subTitle: "Our Success Stories",
+      title: "Systems Delivered with Excellence",
+    },
+  };
+  const t = projectText[language] || projectText["pt"]; // Fallback to Portuguese if language not found
+  const p = ProjectV1Data[language] || ProjectV1Data["pt"]; // Fallback to Portuguese if language not found
+
   return (
     <>
       <div className="project-style-one-area overflow-hidden default-padding-top bg-gray">
@@ -31,8 +45,8 @@ const ProjectV1 = () => {
             <div className="row">
               <div className="col-xl-5 col-lg-6">
                 <div className="content-left">
-                  <h5 className="sub-title">Nossos Casos de Sucesso</h5>
-                  <h2 className="heading">Sistemas Entregues com Excelência</h2>
+                  <h5 className="sub-title">{t.subTitle}</h5>
+                  <h2 className="heading">{t.title}</h2>
                 </div>
               </div>
             </div>
@@ -85,7 +99,7 @@ const ProjectV1 = () => {
                         },
                       }}
                     >
-                      {ProjectV1Data.map((project) => (
+                      {p.map((project) => (
                         <SwiperSlide key={project.id}>
                           <SingleProjectV1 project={project} />
                         </SwiperSlide>

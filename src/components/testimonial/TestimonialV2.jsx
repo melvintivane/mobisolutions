@@ -1,13 +1,25 @@
-import React from "react";
+import { useRef } from "react";
+import { Autoplay, Keyboard, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Keyboard, Autoplay, Pagination } from "swiper/modules";
+import { useLanguage } from "../../context/LanguageContext";
 import TestimonialV2Data from "../../jsonData/TestimonialV2Data.json";
 import SingleTestimonialV2 from "./SingleTestimonialV2";
-import { useRef } from "react";
 
 const TestimonialV2 = () => {
   const SlideRef = useRef();
 
+  const { language } = useLanguage();
+  const testimonialText = {
+    pt: {
+      title: "Depoimentos",
+
+    },
+    en: {
+      title: "Testimonials",
+    },
+  };
+  const t = testimonialText[language] || testimonialText["pt"]; // Fallback to Portuguese if language not found
+  const p = TestimonialV2Data[language] || TestimonialV2Data["pt"]; // Fallback to Portuguese if language not found
   return (
     <>
       <div className="testimonail-style-one-area default-padding">
@@ -15,7 +27,7 @@ const TestimonialV2 = () => {
           <div className="row">
             <div className="col-lg-5">
               <div className="testimonial-style-one-thumb">
-                <h2 className="text-large">Depoimento</h2>
+                <h2 className="text-large">{t.title}</h2>
                 <img src="/img/about/testimonial.png" alt="Image Not Found" />
               </div>
             </div>
@@ -42,7 +54,7 @@ const TestimonialV2 = () => {
                       enabled: true,
                     }}
                   >
-                    {TestimonialV2Data.map((testimonial) => (
+                    {p.map((testimonial) => (
                       <SwiperSlide key={testimonial.id}>
                         <SingleTestimonialV2 testimonial={testimonial} />
                       </SwiperSlide>
