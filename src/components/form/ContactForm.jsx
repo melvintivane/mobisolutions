@@ -190,6 +190,7 @@ const ContactForm = () => {
                 type="submit"
                 name="submit"
                 id="submit"
+                className="submit-btn"
               >
                 <i className="fa fa-paper-plane"></i>
                 {isSubmitting ? t.loaderMessage : t.submitButton}

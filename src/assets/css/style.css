@@ -401,6 +401,11 @@ p {
   background: var(--color-primary) !important;
 }
 
+.submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
 
 
 
