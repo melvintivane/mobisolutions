@@ -2,6 +2,7 @@ import { useState } from "react";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useLanguage } from "../../context/LanguageContext";
+import { sendContactEmail } from "../../services/contactService";
 
 const ContactForm = () => {
   const { language } = useLanguage();
@@ -52,24 +53,10 @@ const ContactForm = () => {
   const handleFormSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-
-    // Show loading toast
-
+  
     try {
-      const response = await fetch("http://localhost:5000/api/send-email", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-
-      const data = await response.json();
-
-      if (!response.ok || !data.success) {
-        throw new Error(data.message);
-      }
-
+      await sendContactEmail(formData);
+  
       // Success: Update toast
       toast.success(t.toastSucessMessage, {
         position: "top-right",
@@ -97,18 +84,18 @@ const ContactForm = () => {
       // Reset form
       setFormData({ name: "", email: "", phone: "", message: "" });
     } catch (error) {
-      // Error: Update toast
       toast.error(error.message || t.toastFailureMessage, {
         position: "top-right",
         autoClose: 3000,
         type: "error",
         isLoading: false,
       });
-      console.error("Error:", error);
     } finally {
       setIsSubmitting(false);
     }
   };
+
+
   return (
     <>
       <div className="contact-form-style-one">
