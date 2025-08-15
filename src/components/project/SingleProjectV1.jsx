@@ -1,7 +1,10 @@
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import { HashLink as Link } from "react-router-hash-link";
+import { useLanguage } from '../../context/LanguageContext';
 
 const SingleProjectV1 = ({ project }) => {
-  const { id, thumb, projectLink, subTitle, title, shape } = project;
+  const { id, thumb, projectLink, subTitle, title, shape,link } = project;
+  const {language} = useLanguage();
 
   return (
     <>
@@ -13,6 +16,9 @@ const SingleProjectV1 = ({ project }) => {
             <h4>
               <Link to={`/${projectLink}/${id}#`}>{title}</Link>
             </h4>
+            <h6 style={{paddingTop:"10px"}}>
+              <Link to={`${link}`} target="_blank"><i class="fa-solid fa-eye"></i> {language === 'pt' ? " Visitar" : " Look Up"}</Link>
+            </h6>
           </div>
           <div className="shape">
             <img src={`/img/shape/${shape}`} alt="shape" />

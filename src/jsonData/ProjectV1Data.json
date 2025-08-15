@@ -14,7 +14,8 @@
         "lastParagraph": "Essas ferramentas facilitam o acompanhamento de interações e o envio de atualizações sobre eventos, campanhas e resultados dos projetos. Com uma estratégia de marketing digital bem definida, a fundação pode ampliar seu alcance e promover suas iniciativas de maneira mais eficaz.\n\nAtravés deste projeto, conseguimos criar uma plataforma que não só informa, mas também inspira a ação e a participação da comunidade, alinhando-se à missão da Fundação Samora Machel de promover os direitos humanos e o desenvolvimento social em Moçambique..",
         "boxImg1": "sm.png",
         "boxImg2": "sm-2.png",
-        "shape": "10.png"
+        "shape": "10.png",
+        "link" : "https://samoramachel.org/"
     },
     {
         "id": 4,
@@ -31,7 +32,8 @@
         "lastParagraph": "Com um design intuitivo e uma navegação simplificada, a ClickTechMoz se posiciona como uma referência no comércio eletrônico em Moçambique. O site não só oferece uma ampla variedade de produtos, mas também proporciona uma experiência de compra agradável e eficiente, alinhando-se ao compromisso da empresa de inovar e atender às necessidades dos consumidores. A loja virtual representa um passo significativo na modernização do varejo digital no país.",
         "boxImg1": "clt-1.png",
         "boxImg2": "clt-2.png",
-        "shape": "10.png"
+        "shape": "10.png",
+        "link" : "https://clicktechmoz.com/"
     },
     {
         "id": 5,
@@ -48,7 +50,8 @@
         "lastParagraph": "Com uma proposta de valor clara e um conjunto de serviços diferenciados, a Correio24Expresso se posiciona como uma solução eficiente para necessidades de logística em Moçambique. O site não apenas facilita o envio de pacotes, mas também constrói um relacionamento de confiança com os clientes, alinhando-se à missão da empresa de modernizar o setor de entrega no país.",
         "boxImg1": "correio-1.png",
         "boxImg2": "correio-2.png",
-        "shape": "10.png"
+        "shape": "10.png",
+        "link" : "https://www.correio24expresso.com/"
     },
     {
         "id": 6,
@@ -65,7 +68,8 @@
         "lastParagraph": "Este projeto representa um site institucional direto e funcional, ideal para empresas que desejam fortalecer sua presença digital com uma solução moderna, leve e de fácil manutenção.",
         "boxImg1": "flogas-1.png",
         "boxImg2": "flogas-2.png",
-        "shape": "10.png"
+        "shape": "10.png",
+        "link" : "https://flogasmz.com/"
     },
     {
         "id": 2,
@@ -82,7 +86,8 @@
         "lastParagraph": "Com uma base crescente de vagas e candidatos, a EPMCS se destaca como uma solução confiável para aqueles que buscam oportunidades no mercado de trabalho. A plataforma é dedicada a ajudar as pessoas a encontrarem a carreira que merecem, promovendo uma conexão eficaz entre talento e oportunidade.",
         "boxImg1": "ep-1.png",
         "boxImg2": "ep-2.png",
-        "shape": "10.png"
+        "shape": "10.png",
+        "link" : "https://epmcsdatabase.com/"
     },
     {
         "id": 7,
@@ -99,7 +104,8 @@
         "lastParagraph": "Este projeto representa um site institucional elegante e funcional, ideal para empresas de consultoria estratégica que desejam fortalecer sua presença digital com uma solução moderna, leve e de fácil manutenção.",
         "boxImg1": "synapse-1.png",
         "boxImg2": "synapse-2.png",
-        "shape": "10.png"
+        "shape": "10.png",
+        "link" : "https://synstrategy.com"
     }
 ],
 
@@ -119,7 +125,8 @@
         "lastParagraph": "These tools facilitate tracking interactions and sending updates about events, campaigns, and project results. With a well-defined digital marketing strategy, the foundation can expand its reach and promote its initiatives more effectively.\n\nThrough this project, we managed to create a platform that not only informs but also inspires action and community participation, aligning with the Samora Machel Foundation's mission to promote human rights and social development in Mozambique.",
         "boxImg1": "sm.png",
         "boxImg2": "sm-2.png",
-        "shape": "10.png"
+        "shape": "10.png",
+        "link" : "https://samoramachel.org/"
     },
     {
         "id": 4,
@@ -136,7 +143,8 @@
         "lastParagraph": "With an intuitive design and simplified navigation, ClickTechMoz positions itself as a reference in e-commerce in Mozambique. The site not only offers a wide variety of products but also provides a pleasant and efficient shopping experience, aligning with the company's commitment to innovate and meet consumer needs. The online store represents a significant step in modernizing digital retail in the country.",
         "boxImg1": "clt-1.png",
         "boxImg2": "clt-2.png",
-        "shape": "10.png"
+        "shape": "10.png",
+        "link" : "https://clicktechmoz.com/"
     },
     {
         "id": 5,
@@ -153,7 +161,8 @@
         "lastParagraph": "With a clear value proposition and a set of differentiated services, Correio24Expresso positions itself as an efficient solution for logistics needs in Mozambique. The site not only facilitates package shipping but also builds a trusting relationship with customers, aligning with the company's mission to modernize the delivery sector in the country.",
         "boxImg1": "correio-1.png",
         "boxImg2": "correio-2.png",
-        "shape": "10.png"
+        "shape": "10.png",
+        "link" : "https://www.correio24expresso.com/"
     },
     {
         "id": 6,
@@ -170,7 +179,8 @@
         "lastParagraph": "This project represents a straightforward and functional institutional site, ideal for companies that want to strengthen their digital presence with a modern, lightweight, and easy-to-maintain solution.",
         "boxImg1": "flogas-1.png",
         "boxImg2": "flogas-2.png",
-        "shape": "10.png"
+        "shape": "10.png",
+        "link" : "https://flogasmz.com/"
     },
     {
         "id": 2,
@@ -187,7 +197,8 @@
         "lastParagraph": "With a growing database of job openings and candidates, EPMCS stands out as a reliable solution for those seeking opportunities in the job market. The platform is dedicated to helping people find the careers they deserve, promoting an effective connection between talent and opportunity.",
         "boxImg1": "ep-1.png",
         "boxImg2": "ep-2.png",
-        "shape": "10.png"
+        "shape": "10.png",
+        "link" : "https://epmcsdatabase.com/"
     },
     {
         "id": 7,
@@ -204,7 +215,8 @@
         "lastParagraph": "This project represents an elegant and functional institutional site, ideal for strategic consulting firms that want to strengthen their digital presence with a modern, lightweight, and easy-to-maintain solution.",
         "boxImg1": "synapse-1.png",
         "boxImg2": "synapse-2.png",
-        "shape": "10.png"
+        "shape": "10.png",
+        "link" : "https://synstrategy.com"
     }
 ]
 
